@@ -163,7 +163,8 @@ class SparseAgent(base_agent.BaseAgent):
         
             self.qlearn.learn(str(self.previous_state), self.previous_action, reward, 'terminal')
             
-            self.qlearn.q_table.to_pickle(data_directory + '.gz', 'gzip')
+            # self.qlearn.q_table.to_pickle(data_directory + '.gz', 'gzip')
+            self.qlearn.q_table.to_pickle(os.path.join(data_directory, DATA_FILE + '.gz'), compression='gzip')
             
             self.previous_action = None
             self.previous_state = None
@@ -308,7 +309,7 @@ class SparseAgent(base_agent.BaseAgent):
         return actions.FunctionCall(_NO_OP, [])
 
 def main():
-    max_episodes = 1000
+    max_episodes = 10000
     flags.FLAGS(sys.argv)
 
     try:
