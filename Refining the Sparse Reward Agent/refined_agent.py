@@ -1,14 +1,15 @@
 import random
 import math
 import os
-
 import numpy as np
 import pandas as pd
-
+import sys
+import absl.flags as flags
 from pysc2.agents import base_agent
-from pysc2.lib import actions
-from pysc2.lib import features
+from pysc2.env import sc2_env, run_loop
+from pysc2.lib import features, actions
 
+# Constants for actions
 _NO_OP = actions.FUNCTIONS.no_op.id
 _SELECT_POINT = actions.FUNCTIONS.select_point.id
 _BUILD_SUPPLY_DEPOT = actions.FUNCTIONS.Build_SupplyDepot_screen.id
@@ -18,10 +19,12 @@ _SELECT_ARMY = actions.FUNCTIONS.select_army.id
 _ATTACK_MINIMAP = actions.FUNCTIONS.Attack_minimap.id
 _HARVEST_GATHER = actions.FUNCTIONS.Harvest_Gather_screen.id
 
+# Constants for features
 _PLAYER_RELATIVE = features.SCREEN_FEATURES.player_relative.index
 _UNIT_TYPE = features.SCREEN_FEATURES.unit_type.index
 _PLAYER_ID = features.SCREEN_FEATURES.player_id.index
 
+# Constants for identification
 _PLAYER_SELF = 1
 _PLAYER_HOSTILE = 4
 _ARMY_SUPPLY = 5
@@ -32,12 +35,15 @@ _TERRAN_SUPPLY_DEPOT = 19
 _TERRAN_BARRACKS = 21
 _NEUTRAL_MINERAL_FIELD = 341
 
+# Constants for actions queue
 _NOT_QUEUED = [0]
 _QUEUED = [1]
 _SELECT_ALL = [2]
 
 DATA_FILE = 'refined_agent_data'
+data_directory = 'Q-tables'  # Relative path to the Q-tables directory
 
+# Action definitions
 ACTION_DO_NOTHING = 'donothing'
 ACTION_BUILD_SUPPLY_DEPOT = 'buildsupplydepot'
 ACTION_BUILD_BARRACKS = 'buildbarracks'
@@ -71,7 +77,7 @@ class QLearningTable:
         
         self.disallowed_actions[observation] = excluded_actions
         
-        state_action = self.q_table.ix[observation, :]
+        state_action = self.q_table.loc[observation, :]
         
         for excluded_action in excluded_actions:
             del state_action[excluded_action]
@@ -93,9 +99,9 @@ class QLearningTable:
         self.check_state_exist(s_)
         self.check_state_exist(s)
         
-        q_predict = self.q_table.ix[s, a]
+        q_predict = self.q_table.loc[s, a]
         
-        s_rewards = self.q_table.ix[s_, :]
+        s_rewards = self.q_table.loc[s_, :]
         
         if s_ in self.disallowed_actions:
             for excluded_action in self.disallowed_actions[s_]:
@@ -107,13 +113,22 @@ class QLearningTable:
             q_target = r  # next state is terminal
             
         # update
-        self.q_table.ix[s, a] += self.lr * (q_target - q_predict)
+        self.q_table.loc[s, a] += self.lr * (q_target - q_predict)
 
     def check_state_exist(self, state):
         if state not in self.q_table.index:
             # append new state to q table
-            self.q_table = self.q_table.append(pd.Series([0] * len(self.actions), index=self.q_table.columns, name=state))
+            new_row = pd.Series([0]*len(self.actions), index=self.q_table.columns, name=state)
+            self.q_table = pd.concat([self.q_table, pd.DataFrame(new_row).T], ignore_index=False)
 
+    def save(self, filename):
+        """Save the Q-table to a CSV file, ensuring the directory exists."""
+        full_path = os.path.join('Q-tables', filename)
+        directory = os.path.dirname(full_path)
+        if not os.path.exists(directory):
+            os.makedirs(directory, exist_ok=True)
+        self.q_table.to_csv(full_path)
+        
 class SparseAgent(base_agent.BaseAgent):
     def __init__(self):
         super(SparseAgent, self).__init__()
@@ -128,8 +143,9 @@ class SparseAgent(base_agent.BaseAgent):
         
         self.move_number = 0
         
-        if os.path.isfile(DATA_FILE + '.gz'):
-            self.qlearn.q_table = pd.read_pickle(DATA_FILE + '.gz', compression='gzip')
+        data_file_path = os.path.join(data_directory, DATA_FILE + '.gz')
+        if os.path.isfile(data_file_path):
+            self.qlearn.q_table = pd.read_pickle(data_file_path, compression='gzip')
         
     def transformDistance(self, x, x_distance, y, y_distance):
         if not self.base_top_left:
@@ -170,10 +186,10 @@ class SparseAgent(base_agent.BaseAgent):
             
             return actions.FunctionCall(_NO_OP, [])
         
-        unit_type = obs.observation['screen'][_UNIT_TYPE]
+        unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
 
         if obs.first():
-            player_y, player_x = (obs.observation['minimap'][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
+            player_y, player_x = (obs.observation['feature_minimap'][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
             self.base_top_left = 1 if player_y.any() and player_y.mean() <= 31 else 0
         
             self.cc_y, self.cc_x = (unit_type == _TERRAN_COMMANDCENTER).nonzero()
@@ -204,7 +220,7 @@ class SparseAgent(base_agent.BaseAgent):
             current_state[3] = obs.observation['player'][_ARMY_SUPPLY]
     
             hot_squares = np.zeros(4)        
-            enemy_y, enemy_x = (obs.observation['minimap'][_PLAYER_RELATIVE] == _PLAYER_HOSTILE).nonzero()
+            enemy_y, enemy_x = (obs.observation['feature_minimap'][_PLAYER_RELATIVE] == _PLAYER_HOSTILE).nonzero()
             for i in range(0, len(enemy_y)):
                 y = int(math.ceil((enemy_y[i] + 1) / 32))
                 x = int(math.ceil((enemy_x[i] + 1) / 32))
@@ -218,7 +234,7 @@ class SparseAgent(base_agent.BaseAgent):
                 current_state[i + 4] = hot_squares[i]
     
             green_squares = np.zeros(4)        
-            friendly_y, friendly_x = (obs.observation['minimap'][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
+            friendly_y, friendly_x = (obs.observation['feature_minimap'][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
             for i in range(0, len(friendly_y)):
                 y = int(math.ceil((friendly_y[i] + 1) / 32))
                 x = int(math.ceil((friendly_x[i] + 1) / 32))
@@ -341,3 +357,30 @@ class SparseAgent(base_agent.BaseAgent):
                         return actions.FunctionCall(_HARVEST_GATHER, [_QUEUED, target])
         
         return actions.FunctionCall(_NO_OP, [])
+
+def main():
+    max_episodes = 100
+    flags.FLAGS(sys.argv)
+
+    try:
+        with sc2_env.SC2Env(
+            map_name="Simple64",
+            players=[sc2_env.Agent(sc2_env.Race.terran), sc2_env.Bot(sc2_env.Race.random, sc2_env.Difficulty.very_easy)],
+            agent_interface_format=features.AgentInterfaceFormat(
+                feature_dimensions=features.Dimensions(screen=84, minimap=64),
+                use_feature_units=True
+            ),
+            step_mul=8,
+            game_steps_per_episode=0,
+            visualize=True
+        ) as env:
+            agent = SparseAgent()
+            run_loop.run_loop([agent], env, max_episodes)
+    except KeyboardInterrupt:
+        print("Interrupted")
+    finally:
+        agent.qlearn.save(f"Q_table_maxep_{max_episodes}.csv")
+
+
+if __name__ == "__main__":
+    main()
