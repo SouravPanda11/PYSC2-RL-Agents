@@ -10,8 +10,9 @@ from pysc2.agents import base_agent
 from pysc2.env import sc2_env, run_loop
 from pysc2.lib import features, actions
 
-# Setup logging
-logging.basicConfig(filename='agent_logs.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+max_episodes = 100  # Define the maximum episodes variable
+# Setup logging with dynamic filename based on max_episodes
+logging.basicConfig(filename=f'agent_logs_{max_episodes}.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Constants for actions
 _NO_OP = actions.FUNCTIONS.no_op.id
@@ -43,9 +44,6 @@ _NEUTRAL_MINERAL_FIELD = 341
 _NOT_QUEUED = [0]
 _QUEUED = [1]
 _SELECT_ALL = [2]
-
-DATA_FILE = 'refined_agent_data'
-data_directory = 'Q-tables'  # Relative path to the Q-tables directory
 
 # Action definitions
 ACTION_DO_NOTHING = 'donothing'
@@ -204,8 +202,6 @@ class SparseAgent(base_agent.BaseAgent):
             reward = obs.reward
         
             self.qlearn.learn(str(self.previous_state), self.previous_action, reward, 'terminal')
-            
-            self.qlearn.q_table.to_pickle(DATA_FILE + '.gz', 'gzip')
             
             self.previous_action = None
             self.previous_state = None
@@ -387,7 +383,7 @@ class SparseAgent(base_agent.BaseAgent):
         return actions.FunctionCall(_NO_OP, [])
 
 def main():
-    max_episodes = 1000
+    # max_episodes = 100000
     flags.FLAGS(sys.argv)
 
     try:
@@ -407,8 +403,7 @@ def main():
     except KeyboardInterrupt:
         print("Interrupted")
     finally:
-        agent.qlearn.save(f"Q_{max_episodes}.csv")
-
+        agent.qlearn.save(f"Refined_agent_Q_{max_episodes}.csv")
 
 if __name__ == "__main__":
     main()
