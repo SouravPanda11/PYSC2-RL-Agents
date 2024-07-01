@@ -1,0 +1,1746 @@
+2024-07-01 10:01:25,256 - INFO - Launching SC2: C:/Program Files (x86)/StarCraft II\Versions/Base92174\SC2_x64.exe -listen 127.0.0.1 -port 56724 -dataDir C:/Program Files (x86)/StarCraft II\ -tempDir C:\Users\soura\AppData\Local\Temp\sc-1p9rl8e1\ -displayMode 0 -windowwidth 640 -windowheight 480 -windowx 50 -windowy 50
+2024-07-01 10:01:25,280 - INFO - Connecting to: ws://127.0.0.1:56724/sc2api, attempt: 0, running: True
+2024-07-01 10:01:28,326 - INFO - Connecting to: ws://127.0.0.1:56724/sc2api, attempt: 1, running: True
+2024-07-01 10:01:31,393 - INFO - Connecting to: ws://127.0.0.1:56724/sc2api, attempt: 2, running: True
+2024-07-01 10:01:37,826 - INFO - Environment is ready
+2024-07-01 10:01:37,830 - INFO - Initializing the SparseAgent
+2024-07-01 10:01:37,831 - INFO - Starting episode 1: [terran, random] on Simple64
+2024-07-01 10:01:37,840 - INFO - Processing a new step
+2024-07-01 10:01:37,849 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:37,871 - INFO - Processing a new step
+2024-07-01 10:01:37,929 - INFO - Processing a new step
+2024-07-01 10:01:37,943 - INFO - Processing a new step
+2024-07-01 10:01:37,944 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:37,958 - INFO - Processing a new step
+2024-07-01 10:01:37,968 - INFO - Processing a new step
+2024-07-01 10:01:38,002 - INFO - Processing a new step
+2024-07-01 10:01:38,003 - INFO - Choosing action 1 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,028 - INFO - Processing a new step
+2024-07-01 10:01:38,045 - INFO - Processing a new step
+2024-07-01 10:01:38,104 - INFO - Processing a new step
+2024-07-01 10:01:38,105 - INFO - Choosing action 1 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,116 - INFO - Processing a new step
+2024-07-01 10:01:38,126 - INFO - Processing a new step
+2024-07-01 10:01:38,139 - INFO - Processing a new step
+2024-07-01 10:01:38,140 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,150 - INFO - Processing a new step
+2024-07-01 10:01:38,227 - INFO - Processing a new step
+2024-07-01 10:01:38,237 - INFO - Processing a new step
+2024-07-01 10:01:38,238 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,248 - INFO - Processing a new step
+2024-07-01 10:01:38,260 - INFO - Processing a new step
+2024-07-01 10:01:38,271 - INFO - Processing a new step
+2024-07-01 10:01:38,273 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,291 - INFO - Processing a new step
+2024-07-01 10:01:38,304 - INFO - Processing a new step
+2024-07-01 10:01:38,316 - INFO - Processing a new step
+2024-07-01 10:01:38,317 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,328 - INFO - Processing a new step
+2024-07-01 10:01:38,339 - INFO - Processing a new step
+2024-07-01 10:01:38,397 - INFO - Processing a new step
+2024-07-01 10:01:38,398 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,408 - INFO - Processing a new step
+2024-07-01 10:01:38,422 - INFO - Processing a new step
+2024-07-01 10:01:38,432 - INFO - Processing a new step
+2024-07-01 10:01:38,433 - INFO - Choosing action 1 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,446 - INFO - Processing a new step
+2024-07-01 10:01:38,468 - INFO - Processing a new step
+2024-07-01 10:01:38,481 - INFO - Processing a new step
+2024-07-01 10:01:38,483 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:01:38,495 - INFO - Processing a new step
+2024-07-01 10:01:38,507 - INFO - Processing a new step
+2024-07-01 10:01:38,518 - INFO - Processing a new step
+2024-07-01 10:01:38,521 - INFO - Environment Close
+2024-07-01 10:01:38,633 - INFO - Shutdown gracefully.
+2024-07-01 10:01:38,633 - INFO - Shutdown with return code: 1
+2024-07-01 10:01:38,765 - INFO - Environment Close
+2024-07-01 10:29:20,669 - INFO - Launching SC2: C:/Program Files (x86)/StarCraft II\Versions/Base92174\SC2_x64.exe -listen 127.0.0.1 -port 58568 -dataDir C:/Program Files (x86)/StarCraft II\ -tempDir C:\Users\soura\AppData\Local\Temp\sc-ag1rvjm2\ -displayMode 0 -windowwidth 640 -windowheight 480 -windowx 50 -windowy 50
+2024-07-01 10:29:20,689 - INFO - Connecting to: ws://127.0.0.1:58568/sc2api, attempt: 0, running: True
+2024-07-01 10:29:23,746 - INFO - Connecting to: ws://127.0.0.1:58568/sc2api, attempt: 1, running: True
+2024-07-01 10:29:26,794 - INFO - Connecting to: ws://127.0.0.1:58568/sc2api, attempt: 2, running: True
+2024-07-01 10:29:32,602 - INFO - Environment is ready
+2024-07-01 10:29:32,603 - INFO - Initializing the SparseAgent
+2024-07-01 10:29:32,603 - INFO - Starting episode 1: [terran, random] on Simple64
+2024-07-01 10:29:32,705 - INFO - Processing a new step
+2024-07-01 10:29:32,707 - INFO - Environment Close
+2024-07-01 10:29:32,820 - INFO - Shutdown gracefully.
+2024-07-01 10:29:32,820 - INFO - Shutdown with return code: 1
+2024-07-01 10:29:32,948 - INFO - Environment Close
+2024-07-01 10:30:40,863 - INFO - Launching SC2: C:/Program Files (x86)/StarCraft II\Versions/Base92174\SC2_x64.exe -listen 127.0.0.1 -port 58687 -dataDir C:/Program Files (x86)/StarCraft II\ -tempDir C:\Users\soura\AppData\Local\Temp\sc-_rzixaed\ -displayMode 0 -windowwidth 640 -windowheight 480 -windowx 50 -windowy 50
+2024-07-01 10:30:40,883 - INFO - Connecting to: ws://127.0.0.1:58687/sc2api, attempt: 0, running: True
+2024-07-01 10:30:43,915 - INFO - Connecting to: ws://127.0.0.1:58687/sc2api, attempt: 1, running: True
+2024-07-01 10:30:46,985 - INFO - Connecting to: ws://127.0.0.1:58687/sc2api, attempt: 2, running: True
+2024-07-01 10:30:53,426 - INFO - Environment is ready
+2024-07-01 10:30:53,427 - INFO - Initializing the SparseAgent
+2024-07-01 10:30:53,427 - INFO - Starting episode 1: [terran, random] on Simple64
+2024-07-01 10:30:53,482 - INFO - Processing a new step
+2024-07-01 10:30:53,484 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,506 - INFO - Processing a new step
+2024-07-01 10:30:53,524 - INFO - Processing a new step
+2024-07-01 10:30:53,583 - INFO - Processing a new step
+2024-07-01 10:30:53,585 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,585 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,602 - INFO - Processing a new step
+2024-07-01 10:30:53,613 - INFO - Processing a new step
+2024-07-01 10:30:53,625 - INFO - Processing a new step
+2024-07-01 10:30:53,626 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,627 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,660 - INFO - Processing a new step
+2024-07-01 10:30:53,673 - INFO - Processing a new step
+2024-07-01 10:30:53,689 - INFO - Processing a new step
+2024-07-01 10:30:53,690 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,690 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,701 - INFO - Processing a new step
+2024-07-01 10:30:53,728 - INFO - Processing a new step
+2024-07-01 10:30:53,739 - INFO - Processing a new step
+2024-07-01 10:30:53,740 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,740 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,752 - INFO - Processing a new step
+2024-07-01 10:30:53,821 - INFO - Processing a new step
+2024-07-01 10:30:53,831 - INFO - Processing a new step
+2024-07-01 10:30:53,832 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,832 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,842 - INFO - Processing a new step
+2024-07-01 10:30:53,853 - INFO - Processing a new step
+2024-07-01 10:30:53,865 - INFO - Processing a new step
+2024-07-01 10:30:53,866 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,867 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,883 - INFO - Processing a new step
+2024-07-01 10:30:53,894 - INFO - Processing a new step
+2024-07-01 10:30:53,906 - INFO - Processing a new step
+2024-07-01 10:30:53,907 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,908 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,920 - INFO - Processing a new step
+2024-07-01 10:30:53,931 - INFO - Processing a new step
+2024-07-01 10:30:53,951 - INFO - Processing a new step
+2024-07-01 10:30:53,952 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,953 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:53,965 - INFO - Processing a new step
+2024-07-01 10:30:53,975 - INFO - Processing a new step
+2024-07-01 10:30:53,987 - INFO - Processing a new step
+2024-07-01 10:30:53,988 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:53,988 - INFO - Choosing action 1 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,021 - INFO - Processing a new step
+2024-07-01 10:30:54,044 - INFO - Processing a new step
+2024-07-01 10:30:54,059 - INFO - Processing a new step
+2024-07-01 10:30:54,060 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 1: 0.0 -> 0.0
+2024-07-01 10:30:54,061 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,128 - INFO - Processing a new step
+2024-07-01 10:30:54,139 - INFO - Processing a new step
+2024-07-01 10:30:54,152 - INFO - Processing a new step
+2024-07-01 10:30:54,154 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,154 - INFO - Choosing action 0 for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,166 - INFO - Processing a new step
+2024-07-01 10:30:54,201 - INFO - Processing a new step
+2024-07-01 10:30:54,213 - INFO - Processing a new step
+2024-07-01 10:30:54,216 - INFO - Updated Q-value for state [1. 0. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,216 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,227 - INFO - Processing a new step
+2024-07-01 10:30:54,238 - INFO - Processing a new step
+2024-07-01 10:30:54,249 - INFO - Processing a new step
+2024-07-01 10:30:54,250 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,250 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,302 - INFO - Processing a new step
+2024-07-01 10:30:54,313 - INFO - Processing a new step
+2024-07-01 10:30:54,324 - INFO - Processing a new step
+2024-07-01 10:30:54,327 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,327 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,338 - INFO - Processing a new step
+2024-07-01 10:30:54,352 - INFO - Processing a new step
+2024-07-01 10:30:54,366 - INFO - Processing a new step
+2024-07-01 10:30:54,368 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,368 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,380 - INFO - Processing a new step
+2024-07-01 10:30:54,394 - INFO - Processing a new step
+2024-07-01 10:30:54,406 - INFO - Processing a new step
+2024-07-01 10:30:54,407 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,407 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,430 - INFO - Processing a new step
+2024-07-01 10:30:54,441 - INFO - Processing a new step
+2024-07-01 10:30:54,453 - INFO - Processing a new step
+2024-07-01 10:30:54,454 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,454 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,466 - INFO - Processing a new step
+2024-07-01 10:30:54,478 - INFO - Processing a new step
+2024-07-01 10:30:54,497 - INFO - Processing a new step
+2024-07-01 10:30:54,498 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,499 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,509 - INFO - Processing a new step
+2024-07-01 10:30:54,520 - INFO - Processing a new step
+2024-07-01 10:30:54,530 - INFO - Processing a new step
+2024-07-01 10:30:54,531 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,532 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,544 - INFO - Processing a new step
+2024-07-01 10:30:54,560 - INFO - Processing a new step
+2024-07-01 10:30:54,570 - INFO - Processing a new step
+2024-07-01 10:30:54,571 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,572 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,583 - INFO - Processing a new step
+2024-07-01 10:30:54,595 - INFO - Processing a new step
+2024-07-01 10:30:54,607 - INFO - Processing a new step
+2024-07-01 10:30:54,608 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,610 - INFO - Choosing action 1 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,629 - INFO - Processing a new step
+2024-07-01 10:30:54,642 - INFO - Processing a new step
+2024-07-01 10:30:54,655 - INFO - Processing a new step
+2024-07-01 10:30:54,656 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 1: 0.0 -> 0.0
+2024-07-01 10:30:54,657 - INFO - Choosing action 1 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,669 - INFO - Processing a new step
+2024-07-01 10:30:54,692 - INFO - Processing a new step
+2024-07-01 10:30:54,705 - INFO - Processing a new step
+2024-07-01 10:30:54,706 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 1: 0.0 -> 0.0
+2024-07-01 10:30:54,707 - INFO - Choosing action 1 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,720 - INFO - Processing a new step
+2024-07-01 10:30:54,733 - INFO - Processing a new step
+2024-07-01 10:30:54,750 - INFO - Processing a new step
+2024-07-01 10:30:54,751 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 1: 0.0 -> 0.0
+2024-07-01 10:30:54,752 - INFO - Choosing action 0 for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,766 - INFO - Processing a new step
+2024-07-01 10:30:54,779 - INFO - Processing a new step
+2024-07-01 10:30:54,791 - INFO - Processing a new step
+2024-07-01 10:30:54,793 - INFO - Updated Q-value for state [1. 1. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,793 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,811 - INFO - Processing a new step
+2024-07-01 10:30:54,824 - INFO - Processing a new step
+2024-07-01 10:30:54,835 - INFO - Processing a new step
+2024-07-01 10:30:54,836 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,841 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,852 - INFO - Processing a new step
+2024-07-01 10:30:54,876 - INFO - Processing a new step
+2024-07-01 10:30:54,888 - INFO - Processing a new step
+2024-07-01 10:30:54,889 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,890 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,905 - INFO - Processing a new step
+2024-07-01 10:30:54,918 - INFO - Processing a new step
+2024-07-01 10:30:54,938 - INFO - Processing a new step
+2024-07-01 10:30:54,938 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,940 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,951 - INFO - Processing a new step
+2024-07-01 10:30:54,965 - INFO - Processing a new step
+2024-07-01 10:30:54,976 - INFO - Processing a new step
+2024-07-01 10:30:54,977 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:54,978 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:54,992 - INFO - Processing a new step
+2024-07-01 10:30:55,004 - INFO - Processing a new step
+2024-07-01 10:30:55,018 - INFO - Processing a new step
+2024-07-01 10:30:55,018 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,019 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,030 - INFO - Processing a new step
+2024-07-01 10:30:55,042 - INFO - Processing a new step
+2024-07-01 10:30:55,057 - INFO - Processing a new step
+2024-07-01 10:30:55,058 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,059 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,070 - INFO - Processing a new step
+2024-07-01 10:30:55,081 - INFO - Processing a new step
+2024-07-01 10:30:55,093 - INFO - Processing a new step
+2024-07-01 10:30:55,094 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,094 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,107 - INFO - Processing a new step
+2024-07-01 10:30:55,133 - INFO - Processing a new step
+2024-07-01 10:30:55,146 - INFO - Processing a new step
+2024-07-01 10:30:55,147 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,148 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,159 - INFO - Processing a new step
+2024-07-01 10:30:55,170 - INFO - Processing a new step
+2024-07-01 10:30:55,186 - INFO - Processing a new step
+2024-07-01 10:30:55,187 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,188 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,202 - INFO - Processing a new step
+2024-07-01 10:30:55,213 - INFO - Processing a new step
+2024-07-01 10:30:55,226 - INFO - Processing a new step
+2024-07-01 10:30:55,227 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,227 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,244 - INFO - Processing a new step
+2024-07-01 10:30:55,257 - INFO - Processing a new step
+2024-07-01 10:30:55,270 - INFO - Processing a new step
+2024-07-01 10:30:55,271 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,272 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,282 - INFO - Processing a new step
+2024-07-01 10:30:55,298 - INFO - Processing a new step
+2024-07-01 10:30:55,310 - INFO - Processing a new step
+2024-07-01 10:30:55,310 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,310 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,323 - INFO - Processing a new step
+2024-07-01 10:30:55,337 - INFO - Processing a new step
+2024-07-01 10:30:55,354 - INFO - Processing a new step
+2024-07-01 10:30:55,356 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,358 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,369 - INFO - Processing a new step
+2024-07-01 10:30:55,383 - INFO - Processing a new step
+2024-07-01 10:30:55,394 - INFO - Processing a new step
+2024-07-01 10:30:55,394 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,395 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,411 - INFO - Processing a new step
+2024-07-01 10:30:55,422 - INFO - Processing a new step
+2024-07-01 10:30:55,434 - INFO - Processing a new step
+2024-07-01 10:30:55,435 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,436 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,449 - INFO - Processing a new step
+2024-07-01 10:30:55,460 - INFO - Processing a new step
+2024-07-01 10:30:55,481 - INFO - Processing a new step
+2024-07-01 10:30:55,481 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,483 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,493 - INFO - Processing a new step
+2024-07-01 10:30:55,505 - INFO - Processing a new step
+2024-07-01 10:30:55,516 - INFO - Processing a new step
+2024-07-01 10:30:55,517 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,518 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,536 - INFO - Processing a new step
+2024-07-01 10:30:55,549 - INFO - Processing a new step
+2024-07-01 10:30:55,561 - INFO - Processing a new step
+2024-07-01 10:30:55,562 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,563 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,576 - INFO - Processing a new step
+2024-07-01 10:30:55,600 - INFO - Processing a new step
+2024-07-01 10:30:55,611 - INFO - Processing a new step
+2024-07-01 10:30:55,612 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,612 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,624 - INFO - Processing a new step
+2024-07-01 10:30:55,636 - INFO - Processing a new step
+2024-07-01 10:30:55,648 - INFO - Processing a new step
+2024-07-01 10:30:55,649 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,650 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,667 - INFO - Processing a new step
+2024-07-01 10:30:55,678 - INFO - Processing a new step
+2024-07-01 10:30:55,690 - INFO - Processing a new step
+2024-07-01 10:30:55,692 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,692 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,704 - INFO - Processing a new step
+2024-07-01 10:30:55,715 - INFO - Processing a new step
+2024-07-01 10:30:55,731 - INFO - Processing a new step
+2024-07-01 10:30:55,732 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,733 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,745 - INFO - Processing a new step
+2024-07-01 10:30:55,758 - INFO - Processing a new step
+2024-07-01 10:30:55,770 - INFO - Processing a new step
+2024-07-01 10:30:55,771 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,772 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,790 - INFO - Processing a new step
+2024-07-01 10:30:55,800 - INFO - Processing a new step
+2024-07-01 10:30:55,812 - INFO - Processing a new step
+2024-07-01 10:30:55,814 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,814 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,828 - INFO - Processing a new step
+2024-07-01 10:30:55,838 - INFO - Processing a new step
+2024-07-01 10:30:55,854 - INFO - Processing a new step
+2024-07-01 10:30:55,855 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,856 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,867 - INFO - Processing a new step
+2024-07-01 10:30:55,878 - INFO - Processing a new step
+2024-07-01 10:30:55,890 - INFO - Processing a new step
+2024-07-01 10:30:55,891 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,892 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,907 - INFO - Processing a new step
+2024-07-01 10:30:55,920 - INFO - Processing a new step
+2024-07-01 10:30:55,931 - INFO - Processing a new step
+2024-07-01 10:30:55,931 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,932 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,945 - INFO - Processing a new step
+2024-07-01 10:30:55,955 - INFO - Processing a new step
+2024-07-01 10:30:55,972 - INFO - Processing a new step
+2024-07-01 10:30:55,974 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:55,974 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:55,987 - INFO - Processing a new step
+2024-07-01 10:30:55,999 - INFO - Processing a new step
+2024-07-01 10:30:56,011 - INFO - Processing a new step
+2024-07-01 10:30:56,012 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,013 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,030 - INFO - Processing a new step
+2024-07-01 10:30:56,041 - INFO - Processing a new step
+2024-07-01 10:30:56,052 - INFO - Processing a new step
+2024-07-01 10:30:56,053 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,054 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,072 - INFO - Processing a new step
+2024-07-01 10:30:56,096 - INFO - Processing a new step
+2024-07-01 10:30:56,112 - INFO - Processing a new step
+2024-07-01 10:30:56,113 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,113 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,123 - INFO - Processing a new step
+2024-07-01 10:30:56,135 - INFO - Processing a new step
+2024-07-01 10:30:56,149 - INFO - Processing a new step
+2024-07-01 10:30:56,150 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,151 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,165 - INFO - Processing a new step
+2024-07-01 10:30:56,178 - INFO - Processing a new step
+2024-07-01 10:30:56,188 - INFO - Processing a new step
+2024-07-01 10:30:56,189 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,189 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,206 - INFO - Processing a new step
+2024-07-01 10:30:56,219 - INFO - Processing a new step
+2024-07-01 10:30:56,232 - INFO - Processing a new step
+2024-07-01 10:30:56,233 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,234 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,245 - INFO - Processing a new step
+2024-07-01 10:30:56,261 - INFO - Processing a new step
+2024-07-01 10:30:56,274 - INFO - Processing a new step
+2024-07-01 10:30:56,276 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,277 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,288 - INFO - Processing a new step
+2024-07-01 10:30:56,303 - INFO - Processing a new step
+2024-07-01 10:30:56,319 - INFO - Processing a new step
+2024-07-01 10:30:56,319 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,320 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,333 - INFO - Processing a new step
+2024-07-01 10:30:56,344 - INFO - Processing a new step
+2024-07-01 10:30:56,356 - INFO - Processing a new step
+2024-07-01 10:30:56,357 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,358 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,373 - INFO - Processing a new step
+2024-07-01 10:30:56,386 - INFO - Processing a new step
+2024-07-01 10:30:56,397 - INFO - Processing a new step
+2024-07-01 10:30:56,398 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,399 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,411 - INFO - Processing a new step
+2024-07-01 10:30:56,429 - INFO - Processing a new step
+2024-07-01 10:30:56,442 - INFO - Processing a new step
+2024-07-01 10:30:56,443 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,444 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,456 - INFO - Processing a new step
+2024-07-01 10:30:56,467 - INFO - Processing a new step
+2024-07-01 10:30:56,478 - INFO - Processing a new step
+2024-07-01 10:30:56,479 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,481 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,495 - INFO - Processing a new step
+2024-07-01 10:30:56,508 - INFO - Processing a new step
+2024-07-01 10:30:56,519 - INFO - Processing a new step
+2024-07-01 10:30:56,519 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,520 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,531 - INFO - Processing a new step
+2024-07-01 10:30:56,544 - INFO - Processing a new step
+2024-07-01 10:30:56,559 - INFO - Processing a new step
+2024-07-01 10:30:56,559 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,560 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,573 - INFO - Processing a new step
+2024-07-01 10:30:56,585 - INFO - Processing a new step
+2024-07-01 10:30:56,596 - INFO - Processing a new step
+2024-07-01 10:30:56,597 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,597 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,613 - INFO - Processing a new step
+2024-07-01 10:30:56,626 - INFO - Processing a new step
+2024-07-01 10:30:56,637 - INFO - Processing a new step
+2024-07-01 10:30:56,638 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,639 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,652 - INFO - Processing a new step
+2024-07-01 10:30:56,667 - INFO - Processing a new step
+2024-07-01 10:30:56,681 - INFO - Processing a new step
+2024-07-01 10:30:56,682 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,682 - INFO - Choosing action 2 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,694 - INFO - Processing a new step
+2024-07-01 10:30:56,709 - INFO - Processing a new step
+2024-07-01 10:30:56,729 - INFO - Processing a new step
+2024-07-01 10:30:56,729 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 2: 0.0 -> 0.0
+2024-07-01 10:30:56,730 - INFO - Choosing action 0 for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,741 - INFO - Processing a new step
+2024-07-01 10:30:56,752 - INFO - Processing a new step
+2024-07-01 10:30:56,763 - INFO - Processing a new step
+2024-07-01 10:30:56,765 - INFO - Updated Q-value for state [1. 2. 0. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,765 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,776 - INFO - Processing a new step
+2024-07-01 10:30:56,793 - INFO - Processing a new step
+2024-07-01 10:30:56,804 - INFO - Processing a new step
+2024-07-01 10:30:56,805 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,805 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,819 - INFO - Processing a new step
+2024-07-01 10:30:56,830 - INFO - Processing a new step
+2024-07-01 10:30:56,845 - INFO - Processing a new step
+2024-07-01 10:30:56,846 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,847 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,867 - INFO - Processing a new step
+2024-07-01 10:30:56,880 - INFO - Processing a new step
+2024-07-01 10:30:56,903 - INFO - Processing a new step
+2024-07-01 10:30:56,904 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,905 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,918 - INFO - Processing a new step
+2024-07-01 10:30:56,935 - INFO - Processing a new step
+2024-07-01 10:30:56,949 - INFO - Processing a new step
+2024-07-01 10:30:56,952 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:56,954 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:56,973 - INFO - Processing a new step
+2024-07-01 10:30:56,986 - INFO - Processing a new step
+2024-07-01 10:30:57,004 - INFO - Processing a new step
+2024-07-01 10:30:57,006 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,007 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,030 - INFO - Processing a new step
+2024-07-01 10:30:57,047 - INFO - Processing a new step
+2024-07-01 10:30:57,061 - INFO - Processing a new step
+2024-07-01 10:30:57,062 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,063 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,076 - INFO - Processing a new step
+2024-07-01 10:30:57,094 - INFO - Processing a new step
+2024-07-01 10:30:57,107 - INFO - Processing a new step
+2024-07-01 10:30:57,109 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,109 - INFO - Choosing action 2 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,123 - INFO - Processing a new step
+2024-07-01 10:30:57,149 - INFO - Processing a new step
+2024-07-01 10:30:57,164 - INFO - Processing a new step
+2024-07-01 10:30:57,166 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 2: 0.0 -> 0.0
+2024-07-01 10:30:57,168 - INFO - Choosing action 0 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,182 - INFO - Processing a new step
+2024-07-01 10:30:57,195 - INFO - Processing a new step
+2024-07-01 10:30:57,218 - INFO - Processing a new step
+2024-07-01 10:30:57,218 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,220 - INFO - Choosing action 3 for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,237 - INFO - Processing a new step
+2024-07-01 10:30:57,254 - INFO - Processing a new step
+2024-07-01 10:30:57,276 - INFO - Processing a new step
+2024-07-01 10:30:57,278 - INFO - Updated Q-value for state [1. 2. 1. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:30:57,278 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,293 - INFO - Processing a new step
+2024-07-01 10:30:57,307 - INFO - Processing a new step
+2024-07-01 10:30:57,321 - INFO - Processing a new step
+2024-07-01 10:30:57,322 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,323 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,345 - INFO - Processing a new step
+2024-07-01 10:30:57,358 - INFO - Processing a new step
+2024-07-01 10:30:57,369 - INFO - Processing a new step
+2024-07-01 10:30:57,370 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,371 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,387 - INFO - Processing a new step
+2024-07-01 10:30:57,406 - INFO - Processing a new step
+2024-07-01 10:30:57,421 - INFO - Processing a new step
+2024-07-01 10:30:57,422 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,423 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,437 - INFO - Processing a new step
+2024-07-01 10:30:57,481 - INFO - Processing a new step
+2024-07-01 10:30:57,495 - INFO - Processing a new step
+2024-07-01 10:30:57,496 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,496 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,510 - INFO - Processing a new step
+2024-07-01 10:30:57,522 - INFO - Processing a new step
+2024-07-01 10:30:57,536 - INFO - Processing a new step
+2024-07-01 10:30:57,537 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,538 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,550 - INFO - Processing a new step
+2024-07-01 10:30:57,563 - INFO - Processing a new step
+2024-07-01 10:30:57,583 - INFO - Processing a new step
+2024-07-01 10:30:57,584 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,584 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,600 - INFO - Processing a new step
+2024-07-01 10:30:57,612 - INFO - Processing a new step
+2024-07-01 10:30:57,627 - INFO - Processing a new step
+2024-07-01 10:30:57,628 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,628 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,641 - INFO - Processing a new step
+2024-07-01 10:30:57,655 - INFO - Processing a new step
+2024-07-01 10:30:57,668 - INFO - Processing a new step
+2024-07-01 10:30:57,668 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,670 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,683 - INFO - Processing a new step
+2024-07-01 10:30:57,697 - INFO - Processing a new step
+2024-07-01 10:30:57,716 - INFO - Processing a new step
+2024-07-01 10:30:57,718 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,718 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,734 - INFO - Processing a new step
+2024-07-01 10:30:57,747 - INFO - Processing a new step
+2024-07-01 10:30:57,761 - INFO - Processing a new step
+2024-07-01 10:30:57,762 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,763 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,780 - INFO - Processing a new step
+2024-07-01 10:30:57,793 - INFO - Processing a new step
+2024-07-01 10:30:57,807 - INFO - Processing a new step
+2024-07-01 10:30:57,809 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,809 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,825 - INFO - Processing a new step
+2024-07-01 10:30:57,842 - INFO - Processing a new step
+2024-07-01 10:30:57,859 - INFO - Processing a new step
+2024-07-01 10:30:57,860 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,861 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,906 - INFO - Processing a new step
+2024-07-01 10:30:57,924 - INFO - Processing a new step
+2024-07-01 10:30:57,940 - INFO - Processing a new step
+2024-07-01 10:30:57,941 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,941 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:57,955 - INFO - Processing a new step
+2024-07-01 10:30:57,975 - INFO - Processing a new step
+2024-07-01 10:30:57,989 - INFO - Processing a new step
+2024-07-01 10:30:57,991 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:57,991 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,006 - INFO - Processing a new step
+2024-07-01 10:30:58,023 - INFO - Processing a new step
+2024-07-01 10:30:58,044 - INFO - Processing a new step
+2024-07-01 10:30:58,045 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,046 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,061 - INFO - Processing a new step
+2024-07-01 10:30:58,078 - INFO - Processing a new step
+2024-07-01 10:30:58,098 - INFO - Processing a new step
+2024-07-01 10:30:58,100 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,101 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,115 - INFO - Processing a new step
+2024-07-01 10:30:58,129 - INFO - Processing a new step
+2024-07-01 10:30:58,143 - INFO - Processing a new step
+2024-07-01 10:30:58,146 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,149 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,166 - INFO - Processing a new step
+2024-07-01 10:30:58,179 - INFO - Processing a new step
+2024-07-01 10:30:58,195 - INFO - Processing a new step
+2024-07-01 10:30:58,196 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,197 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,210 - INFO - Processing a new step
+2024-07-01 10:30:58,228 - INFO - Processing a new step
+2024-07-01 10:30:58,242 - INFO - Processing a new step
+2024-07-01 10:30:58,243 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,244 - INFO - Choosing action 3 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,261 - INFO - Processing a new step
+2024-07-01 10:30:58,295 - INFO - Processing a new step
+2024-07-01 10:30:58,316 - INFO - Processing a new step
+2024-07-01 10:30:58,317 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:30:58,318 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,333 - INFO - Processing a new step
+2024-07-01 10:30:58,354 - INFO - Processing a new step
+2024-07-01 10:30:58,368 - INFO - Processing a new step
+2024-07-01 10:30:58,369 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,370 - INFO - Choosing action 3 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,386 - INFO - Processing a new step
+2024-07-01 10:30:58,400 - INFO - Processing a new step
+2024-07-01 10:30:58,448 - INFO - Processing a new step
+2024-07-01 10:30:58,448 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:30:58,450 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,465 - INFO - Processing a new step
+2024-07-01 10:30:58,479 - INFO - Processing a new step
+2024-07-01 10:30:58,491 - INFO - Processing a new step
+2024-07-01 10:30:58,492 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,493 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:58,512 - INFO - Processing a new step
+2024-07-01 10:30:58,525 - INFO - Processing a new step
+2024-07-01 10:30:58,541 - INFO - Processing a new step
+2024-07-01 10:30:58,542 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:58,542 - INFO - Choosing action 3 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,575 - INFO - Processing a new step
+2024-07-01 10:30:59,588 - INFO - Processing a new step
+2024-07-01 10:30:59,605 - INFO - Processing a new step
+2024-07-01 10:30:59,605 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:30:59,605 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,633 - INFO - Processing a new step
+2024-07-01 10:30:59,649 - INFO - Processing a new step
+2024-07-01 10:30:59,669 - INFO - Processing a new step
+2024-07-01 10:30:59,670 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:59,671 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,682 - INFO - Processing a new step
+2024-07-01 10:30:59,698 - INFO - Processing a new step
+2024-07-01 10:30:59,714 - INFO - Processing a new step
+2024-07-01 10:30:59,716 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:59,716 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,739 - INFO - Processing a new step
+2024-07-01 10:30:59,756 - INFO - Processing a new step
+2024-07-01 10:30:59,769 - INFO - Processing a new step
+2024-07-01 10:30:59,771 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:59,774 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,786 - INFO - Processing a new step
+2024-07-01 10:30:59,801 - INFO - Processing a new step
+2024-07-01 10:30:59,818 - INFO - Processing a new step
+2024-07-01 10:30:59,820 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:59,820 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,849 - INFO - Processing a new step
+2024-07-01 10:30:59,880 - INFO - Processing a new step
+2024-07-01 10:30:59,891 - INFO - Processing a new step
+2024-07-01 10:30:59,892 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:59,893 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,905 - INFO - Processing a new step
+2024-07-01 10:30:59,919 - INFO - Processing a new step
+2024-07-01 10:30:59,938 - INFO - Processing a new step
+2024-07-01 10:30:59,939 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:30:59,940 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:30:59,968 - INFO - Processing a new step
+2024-07-01 10:30:59,980 - INFO - Processing a new step
+2024-07-01 10:31:00,007 - INFO - Processing a new step
+2024-07-01 10:31:00,008 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,009 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,021 - INFO - Processing a new step
+2024-07-01 10:31:00,033 - INFO - Processing a new step
+2024-07-01 10:31:00,047 - INFO - Processing a new step
+2024-07-01 10:31:00,048 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,048 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,070 - INFO - Processing a new step
+2024-07-01 10:31:00,083 - INFO - Processing a new step
+2024-07-01 10:31:00,096 - INFO - Processing a new step
+2024-07-01 10:31:00,097 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,098 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,113 - INFO - Processing a new step
+2024-07-01 10:31:00,131 - INFO - Processing a new step
+2024-07-01 10:31:00,144 - INFO - Processing a new step
+2024-07-01 10:31:00,145 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,146 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,160 - INFO - Processing a new step
+2024-07-01 10:31:00,173 - INFO - Processing a new step
+2024-07-01 10:31:00,188 - INFO - Processing a new step
+2024-07-01 10:31:00,189 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,190 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,202 - INFO - Processing a new step
+2024-07-01 10:31:00,217 - INFO - Processing a new step
+2024-07-01 10:31:00,228 - INFO - Processing a new step
+2024-07-01 10:31:00,230 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,230 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,245 - INFO - Processing a new step
+2024-07-01 10:31:00,257 - INFO - Processing a new step
+2024-07-01 10:31:00,269 - INFO - Processing a new step
+2024-07-01 10:31:00,271 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,273 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,285 - INFO - Processing a new step
+2024-07-01 10:31:00,302 - INFO - Processing a new step
+2024-07-01 10:31:00,315 - INFO - Processing a new step
+2024-07-01 10:31:00,317 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,321 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,332 - INFO - Processing a new step
+2024-07-01 10:31:00,347 - INFO - Processing a new step
+2024-07-01 10:31:00,363 - INFO - Processing a new step
+2024-07-01 10:31:00,364 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,364 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,377 - INFO - Processing a new step
+2024-07-01 10:31:00,390 - INFO - Processing a new step
+2024-07-01 10:31:00,402 - INFO - Processing a new step
+2024-07-01 10:31:00,403 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,404 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,419 - INFO - Processing a new step
+2024-07-01 10:31:00,431 - INFO - Processing a new step
+2024-07-01 10:31:00,446 - INFO - Processing a new step
+2024-07-01 10:31:00,447 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,448 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,462 - INFO - Processing a new step
+2024-07-01 10:31:00,478 - INFO - Processing a new step
+2024-07-01 10:31:00,491 - INFO - Processing a new step
+2024-07-01 10:31:00,492 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,493 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,508 - INFO - Processing a new step
+2024-07-01 10:31:00,519 - INFO - Processing a new step
+2024-07-01 10:31:00,538 - INFO - Processing a new step
+2024-07-01 10:31:00,538 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,540 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,554 - INFO - Processing a new step
+2024-07-01 10:31:00,566 - INFO - Processing a new step
+2024-07-01 10:31:00,577 - INFO - Processing a new step
+2024-07-01 10:31:00,578 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,579 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,596 - INFO - Processing a new step
+2024-07-01 10:31:00,608 - INFO - Processing a new step
+2024-07-01 10:31:00,621 - INFO - Processing a new step
+2024-07-01 10:31:00,622 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,622 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,637 - INFO - Processing a new step
+2024-07-01 10:31:00,658 - INFO - Processing a new step
+2024-07-01 10:31:00,670 - INFO - Processing a new step
+2024-07-01 10:31:00,671 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,672 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,686 - INFO - Processing a new step
+2024-07-01 10:31:00,699 - INFO - Processing a new step
+2024-07-01 10:31:00,715 - INFO - Processing a new step
+2024-07-01 10:31:00,717 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,717 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,732 - INFO - Processing a new step
+2024-07-01 10:31:00,744 - INFO - Processing a new step
+2024-07-01 10:31:00,757 - INFO - Processing a new step
+2024-07-01 10:31:00,757 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,759 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,774 - INFO - Processing a new step
+2024-07-01 10:31:00,787 - INFO - Processing a new step
+2024-07-01 10:31:00,801 - INFO - Processing a new step
+2024-07-01 10:31:00,802 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,803 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,816 - INFO - Processing a new step
+2024-07-01 10:31:00,832 - INFO - Processing a new step
+2024-07-01 10:31:00,845 - INFO - Processing a new step
+2024-07-01 10:31:00,846 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,847 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,860 - INFO - Processing a new step
+2024-07-01 10:31:00,875 - INFO - Processing a new step
+2024-07-01 10:31:00,890 - INFO - Processing a new step
+2024-07-01 10:31:00,892 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,892 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,908 - INFO - Processing a new step
+2024-07-01 10:31:00,921 - INFO - Processing a new step
+2024-07-01 10:31:00,935 - INFO - Processing a new step
+2024-07-01 10:31:00,936 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,937 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,958 - INFO - Processing a new step
+2024-07-01 10:31:00,971 - INFO - Processing a new step
+2024-07-01 10:31:00,984 - INFO - Processing a new step
+2024-07-01 10:31:00,985 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:00,986 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:00,997 - INFO - Processing a new step
+2024-07-01 10:31:01,014 - INFO - Processing a new step
+2024-07-01 10:31:01,026 - INFO - Processing a new step
+2024-07-01 10:31:01,027 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,028 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,040 - INFO - Processing a new step
+2024-07-01 10:31:01,054 - INFO - Processing a new step
+2024-07-01 10:31:01,073 - INFO - Processing a new step
+2024-07-01 10:31:01,073 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,074 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,089 - INFO - Processing a new step
+2024-07-01 10:31:01,102 - INFO - Processing a new step
+2024-07-01 10:31:01,115 - INFO - Processing a new step
+2024-07-01 10:31:01,116 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,117 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,133 - INFO - Processing a new step
+2024-07-01 10:31:01,144 - INFO - Processing a new step
+2024-07-01 10:31:01,158 - INFO - Processing a new step
+2024-07-01 10:31:01,160 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,161 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,174 - INFO - Processing a new step
+2024-07-01 10:31:01,192 - INFO - Processing a new step
+2024-07-01 10:31:01,205 - INFO - Processing a new step
+2024-07-01 10:31:01,206 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,206 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,220 - INFO - Processing a new step
+2024-07-01 10:31:01,233 - INFO - Processing a new step
+2024-07-01 10:31:01,251 - INFO - Processing a new step
+2024-07-01 10:31:01,252 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,253 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,266 - INFO - Processing a new step
+2024-07-01 10:31:01,279 - INFO - Processing a new step
+2024-07-01 10:31:01,292 - INFO - Processing a new step
+2024-07-01 10:31:01,293 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,294 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,310 - INFO - Processing a new step
+2024-07-01 10:31:01,324 - INFO - Processing a new step
+2024-07-01 10:31:01,337 - INFO - Processing a new step
+2024-07-01 10:31:01,338 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,338 - INFO - Choosing action 0 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,351 - INFO - Processing a new step
+2024-07-01 10:31:01,367 - INFO - Processing a new step
+2024-07-01 10:31:01,382 - INFO - Processing a new step
+2024-07-01 10:31:01,384 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,384 - INFO - Choosing action 3 for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,398 - INFO - Processing a new step
+2024-07-01 10:31:01,411 - INFO - Processing a new step
+2024-07-01 10:31:01,427 - INFO - Processing a new step
+2024-07-01 10:31:01,429 - INFO - Updated Q-value for state [1. 2. 2. 0. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:31:01,429 - INFO - Choosing action 0 for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,445 - INFO - Processing a new step
+2024-07-01 10:31:01,462 - INFO - Processing a new step
+2024-07-01 10:31:01,475 - INFO - Processing a new step
+2024-07-01 10:31:01,476 - INFO - Updated Q-value for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,476 - INFO - Choosing action 0 for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,493 - INFO - Processing a new step
+2024-07-01 10:31:01,508 - INFO - Processing a new step
+2024-07-01 10:31:01,520 - INFO - Processing a new step
+2024-07-01 10:31:01,521 - INFO - Updated Q-value for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,521 - INFO - Choosing action 0 for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,536 - INFO - Processing a new step
+2024-07-01 10:31:01,553 - INFO - Processing a new step
+2024-07-01 10:31:01,567 - INFO - Processing a new step
+2024-07-01 10:31:01,568 - INFO - Updated Q-value for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,569 - INFO - Choosing action 3 for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,582 - INFO - Processing a new step
+2024-07-01 10:31:01,596 - INFO - Processing a new step
+2024-07-01 10:31:01,614 - INFO - Processing a new step
+2024-07-01 10:31:01,616 - INFO - Updated Q-value for state [1. 2. 2. 1. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:31:01,616 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,628 - INFO - Processing a new step
+2024-07-01 10:31:01,641 - INFO - Processing a new step
+2024-07-01 10:31:01,655 - INFO - Processing a new step
+2024-07-01 10:31:01,657 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,657 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,672 - INFO - Processing a new step
+2024-07-01 10:31:01,685 - INFO - Processing a new step
+2024-07-01 10:31:01,698 - INFO - Processing a new step
+2024-07-01 10:31:01,699 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,699 - INFO - Choosing action 5 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,711 - INFO - Processing a new step
+2024-07-01 10:31:01,727 - INFO - Processing a new step
+2024-07-01 10:31:01,742 - INFO - Processing a new step
+2024-07-01 10:31:01,743 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 5: 0.0 -> 0.0
+2024-07-01 10:31:01,743 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,756 - INFO - Processing a new step
+2024-07-01 10:31:01,781 - INFO - Processing a new step
+2024-07-01 10:31:01,808 - INFO - Processing a new step
+2024-07-01 10:31:01,810 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,810 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,827 - INFO - Processing a new step
+2024-07-01 10:31:01,843 - INFO - Processing a new step
+2024-07-01 10:31:01,858 - INFO - Processing a new step
+2024-07-01 10:31:01,859 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,859 - INFO - Choosing action 7 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,879 - INFO - Processing a new step
+2024-07-01 10:31:01,891 - INFO - Processing a new step
+2024-07-01 10:31:01,908 - INFO - Processing a new step
+2024-07-01 10:31:01,909 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 7: 0.0 -> 0.0
+2024-07-01 10:31:01,909 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,923 - INFO - Processing a new step
+2024-07-01 10:31:01,936 - INFO - Processing a new step
+2024-07-01 10:31:01,950 - INFO - Processing a new step
+2024-07-01 10:31:01,952 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:01,952 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:01,972 - INFO - Processing a new step
+2024-07-01 10:31:01,985 - INFO - Processing a new step
+2024-07-01 10:31:02,000 - INFO - Processing a new step
+2024-07-01 10:31:02,001 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,003 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,016 - INFO - Processing a new step
+2024-07-01 10:31:02,034 - INFO - Processing a new step
+2024-07-01 10:31:02,047 - INFO - Processing a new step
+2024-07-01 10:31:02,048 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,048 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,063 - INFO - Processing a new step
+2024-07-01 10:31:02,076 - INFO - Processing a new step
+2024-07-01 10:31:02,092 - INFO - Processing a new step
+2024-07-01 10:31:02,093 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,094 - INFO - Choosing action 3 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,108 - INFO - Processing a new step
+2024-07-01 10:31:02,121 - INFO - Processing a new step
+2024-07-01 10:31:02,133 - INFO - Processing a new step
+2024-07-01 10:31:02,135 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:31:02,136 - INFO - Choosing action 0 for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,155 - INFO - Processing a new step
+2024-07-01 10:31:02,169 - INFO - Processing a new step
+2024-07-01 10:31:02,182 - INFO - Processing a new step
+2024-07-01 10:31:02,183 - INFO - Updated Q-value for state [1. 2. 2. 2. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,184 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,198 - INFO - Processing a new step
+2024-07-01 10:31:02,223 - INFO - Processing a new step
+2024-07-01 10:31:02,234 - INFO - Processing a new step
+2024-07-01 10:31:02,235 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,236 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,249 - INFO - Processing a new step
+2024-07-01 10:31:02,263 - INFO - Processing a new step
+2024-07-01 10:31:02,279 - INFO - Processing a new step
+2024-07-01 10:31:02,280 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,281 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,295 - INFO - Processing a new step
+2024-07-01 10:31:02,312 - INFO - Processing a new step
+2024-07-01 10:31:02,327 - INFO - Processing a new step
+2024-07-01 10:31:02,328 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,332 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,348 - INFO - Processing a new step
+2024-07-01 10:31:02,360 - INFO - Processing a new step
+2024-07-01 10:31:02,376 - INFO - Processing a new step
+2024-07-01 10:31:02,377 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,378 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,392 - INFO - Processing a new step
+2024-07-01 10:31:02,408 - INFO - Processing a new step
+2024-07-01 10:31:02,425 - INFO - Processing a new step
+2024-07-01 10:31:02,426 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,427 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,442 - INFO - Processing a new step
+2024-07-01 10:31:02,454 - INFO - Processing a new step
+2024-07-01 10:31:02,475 - INFO - Processing a new step
+2024-07-01 10:31:02,476 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,477 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,492 - INFO - Processing a new step
+2024-07-01 10:31:02,508 - INFO - Processing a new step
+2024-07-01 10:31:02,520 - INFO - Processing a new step
+2024-07-01 10:31:02,522 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,522 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,538 - INFO - Processing a new step
+2024-07-01 10:31:02,553 - INFO - Processing a new step
+2024-07-01 10:31:02,566 - INFO - Processing a new step
+2024-07-01 10:31:02,567 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,568 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,583 - INFO - Processing a new step
+2024-07-01 10:31:02,600 - INFO - Processing a new step
+2024-07-01 10:31:02,616 - INFO - Processing a new step
+2024-07-01 10:31:02,617 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,618 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,631 - INFO - Processing a new step
+2024-07-01 10:31:02,644 - INFO - Processing a new step
+2024-07-01 10:31:02,661 - INFO - Processing a new step
+2024-07-01 10:31:02,662 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,663 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,678 - INFO - Processing a new step
+2024-07-01 10:31:02,692 - INFO - Processing a new step
+2024-07-01 10:31:02,706 - INFO - Processing a new step
+2024-07-01 10:31:02,707 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,707 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,726 - INFO - Processing a new step
+2024-07-01 10:31:02,738 - INFO - Processing a new step
+2024-07-01 10:31:02,751 - INFO - Processing a new step
+2024-07-01 10:31:02,753 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,754 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,768 - INFO - Processing a new step
+2024-07-01 10:31:02,785 - INFO - Processing a new step
+2024-07-01 10:31:02,798 - INFO - Processing a new step
+2024-07-01 10:31:02,799 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,800 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,814 - INFO - Processing a new step
+2024-07-01 10:31:02,829 - INFO - Processing a new step
+2024-07-01 10:31:02,845 - INFO - Processing a new step
+2024-07-01 10:31:02,846 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,847 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,862 - INFO - Processing a new step
+2024-07-01 10:31:02,875 - INFO - Processing a new step
+2024-07-01 10:31:02,889 - INFO - Processing a new step
+2024-07-01 10:31:02,889 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,890 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,911 - INFO - Processing a new step
+2024-07-01 10:31:02,924 - INFO - Processing a new step
+2024-07-01 10:31:02,939 - INFO - Processing a new step
+2024-07-01 10:31:02,941 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,941 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:02,955 - INFO - Processing a new step
+2024-07-01 10:31:02,978 - INFO - Processing a new step
+2024-07-01 10:31:02,991 - INFO - Processing a new step
+2024-07-01 10:31:02,992 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:02,993 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,009 - INFO - Processing a new step
+2024-07-01 10:31:03,021 - INFO - Processing a new step
+2024-07-01 10:31:03,039 - INFO - Processing a new step
+2024-07-01 10:31:03,040 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,040 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,054 - INFO - Processing a new step
+2024-07-01 10:31:03,069 - INFO - Processing a new step
+2024-07-01 10:31:03,081 - INFO - Processing a new step
+2024-07-01 10:31:03,082 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,083 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,101 - INFO - Processing a new step
+2024-07-01 10:31:03,115 - INFO - Processing a new step
+2024-07-01 10:31:03,129 - INFO - Processing a new step
+2024-07-01 10:31:03,130 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,131 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,145 - INFO - Processing a new step
+2024-07-01 10:31:03,162 - INFO - Processing a new step
+2024-07-01 10:31:03,175 - INFO - Processing a new step
+2024-07-01 10:31:03,176 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,177 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,190 - INFO - Processing a new step
+2024-07-01 10:31:03,202 - INFO - Processing a new step
+2024-07-01 10:31:03,219 - INFO - Processing a new step
+2024-07-01 10:31:03,220 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,221 - INFO - Choosing action 6 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,238 - INFO - Processing a new step
+2024-07-01 10:31:03,258 - INFO - Processing a new step
+2024-07-01 10:31:03,288 - INFO - Processing a new step
+2024-07-01 10:31:03,290 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 6: 0.0 -> 0.0
+2024-07-01 10:31:03,291 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,314 - INFO - Processing a new step
+2024-07-01 10:31:03,327 - INFO - Processing a new step
+2024-07-01 10:31:03,347 - INFO - Processing a new step
+2024-07-01 10:31:03,348 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,349 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:03,362 - INFO - Processing a new step
+2024-07-01 10:31:03,375 - INFO - Processing a new step
+2024-07-01 10:31:03,389 - INFO - Processing a new step
+2024-07-01 10:31:03,390 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,390 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,427 - INFO - Processing a new step
+2024-07-01 10:31:03,442 - INFO - Processing a new step
+2024-07-01 10:31:03,456 - INFO - Processing a new step
+2024-07-01 10:31:03,457 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,457 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,472 - INFO - Processing a new step
+2024-07-01 10:31:03,490 - INFO - Processing a new step
+2024-07-01 10:31:03,505 - INFO - Processing a new step
+2024-07-01 10:31:03,507 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,507 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,522 - INFO - Processing a new step
+2024-07-01 10:31:03,536 - INFO - Processing a new step
+2024-07-01 10:31:03,552 - INFO - Processing a new step
+2024-07-01 10:31:03,553 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,553 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,566 - INFO - Processing a new step
+2024-07-01 10:31:03,580 - INFO - Processing a new step
+2024-07-01 10:31:03,594 - INFO - Processing a new step
+2024-07-01 10:31:03,595 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,596 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,612 - INFO - Processing a new step
+2024-07-01 10:31:03,625 - INFO - Processing a new step
+2024-07-01 10:31:03,636 - INFO - Processing a new step
+2024-07-01 10:31:03,637 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,638 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,651 - INFO - Processing a new step
+2024-07-01 10:31:03,668 - INFO - Processing a new step
+2024-07-01 10:31:03,681 - INFO - Processing a new step
+2024-07-01 10:31:03,683 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,683 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,698 - INFO - Processing a new step
+2024-07-01 10:31:03,711 - INFO - Processing a new step
+2024-07-01 10:31:03,727 - INFO - Processing a new step
+2024-07-01 10:31:03,728 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,729 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,741 - INFO - Processing a new step
+2024-07-01 10:31:03,756 - INFO - Processing a new step
+2024-07-01 10:31:03,770 - INFO - Processing a new step
+2024-07-01 10:31:03,771 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,772 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,789 - INFO - Processing a new step
+2024-07-01 10:31:03,801 - INFO - Processing a new step
+2024-07-01 10:31:03,815 - INFO - Processing a new step
+2024-07-01 10:31:03,816 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,816 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,828 - INFO - Processing a new step
+2024-07-01 10:31:03,845 - INFO - Processing a new step
+2024-07-01 10:31:03,858 - INFO - Processing a new step
+2024-07-01 10:31:03,859 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,859 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,873 - INFO - Processing a new step
+2024-07-01 10:31:03,888 - INFO - Processing a new step
+2024-07-01 10:31:03,906 - INFO - Processing a new step
+2024-07-01 10:31:03,907 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,908 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,921 - INFO - Processing a new step
+2024-07-01 10:31:03,933 - INFO - Processing a new step
+2024-07-01 10:31:03,949 - INFO - Processing a new step
+2024-07-01 10:31:03,950 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,950 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:03,968 - INFO - Processing a new step
+2024-07-01 10:31:03,981 - INFO - Processing a new step
+2024-07-01 10:31:03,995 - INFO - Processing a new step
+2024-07-01 10:31:03,996 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:03,997 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,011 - INFO - Processing a new step
+2024-07-01 10:31:04,029 - INFO - Processing a new step
+2024-07-01 10:31:04,042 - INFO - Processing a new step
+2024-07-01 10:31:04,043 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,044 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,058 - INFO - Processing a new step
+2024-07-01 10:31:04,070 - INFO - Processing a new step
+2024-07-01 10:31:04,087 - INFO - Processing a new step
+2024-07-01 10:31:04,088 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,089 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,104 - INFO - Processing a new step
+2024-07-01 10:31:04,117 - INFO - Processing a new step
+2024-07-01 10:31:04,130 - INFO - Processing a new step
+2024-07-01 10:31:04,131 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,132 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,148 - INFO - Processing a new step
+2024-07-01 10:31:04,162 - INFO - Processing a new step
+2024-07-01 10:31:04,178 - INFO - Processing a new step
+2024-07-01 10:31:04,179 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,179 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,196 - INFO - Processing a new step
+2024-07-01 10:31:04,213 - INFO - Processing a new step
+2024-07-01 10:31:04,228 - INFO - Processing a new step
+2024-07-01 10:31:04,229 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,229 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,245 - INFO - Processing a new step
+2024-07-01 10:31:04,260 - INFO - Processing a new step
+2024-07-01 10:31:04,279 - INFO - Processing a new step
+2024-07-01 10:31:04,280 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,281 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,294 - INFO - Processing a new step
+2024-07-01 10:31:04,307 - INFO - Processing a new step
+2024-07-01 10:31:04,321 - INFO - Processing a new step
+2024-07-01 10:31:04,322 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,323 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,340 - INFO - Processing a new step
+2024-07-01 10:31:04,354 - INFO - Processing a new step
+2024-07-01 10:31:04,367 - INFO - Processing a new step
+2024-07-01 10:31:04,368 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,369 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,382 - INFO - Processing a new step
+2024-07-01 10:31:04,399 - INFO - Processing a new step
+2024-07-01 10:31:04,413 - INFO - Processing a new step
+2024-07-01 10:31:04,414 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,415 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,428 - INFO - Processing a new step
+2024-07-01 10:31:04,442 - INFO - Processing a new step
+2024-07-01 10:31:04,460 - INFO - Processing a new step
+2024-07-01 10:31:04,461 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,461 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,476 - INFO - Processing a new step
+2024-07-01 10:31:04,488 - INFO - Processing a new step
+2024-07-01 10:31:04,503 - INFO - Processing a new step
+2024-07-01 10:31:04,504 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,504 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,520 - INFO - Processing a new step
+2024-07-01 10:31:04,533 - INFO - Processing a new step
+2024-07-01 10:31:04,548 - INFO - Processing a new step
+2024-07-01 10:31:04,549 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,550 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,562 - INFO - Processing a new step
+2024-07-01 10:31:04,580 - INFO - Processing a new step
+2024-07-01 10:31:04,591 - INFO - Processing a new step
+2024-07-01 10:31:04,592 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,593 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,607 - INFO - Processing a new step
+2024-07-01 10:31:04,621 - INFO - Processing a new step
+2024-07-01 10:31:04,638 - INFO - Processing a new step
+2024-07-01 10:31:04,639 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,640 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,656 - INFO - Processing a new step
+2024-07-01 10:31:04,670 - INFO - Processing a new step
+2024-07-01 10:31:04,683 - INFO - Processing a new step
+2024-07-01 10:31:04,684 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,684 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,701 - INFO - Processing a new step
+2024-07-01 10:31:04,715 - INFO - Processing a new step
+2024-07-01 10:31:04,728 - INFO - Processing a new step
+2024-07-01 10:31:04,730 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,730 - INFO - Choosing action 0 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,742 - INFO - Processing a new step
+2024-07-01 10:31:04,759 - INFO - Processing a new step
+2024-07-01 10:31:04,774 - INFO - Processing a new step
+2024-07-01 10:31:04,775 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,776 - INFO - Choosing action 3 for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,791 - INFO - Processing a new step
+2024-07-01 10:31:04,804 - INFO - Processing a new step
+2024-07-01 10:31:04,824 - INFO - Processing a new step
+2024-07-01 10:31:04,826 - INFO - Updated Q-value for state [1. 2. 2. 3. 0. 0. 0. 0. 1. 1. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:31:04,826 - INFO - Choosing action 7 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,842 - INFO - Processing a new step
+2024-07-01 10:31:04,857 - INFO - Processing a new step
+2024-07-01 10:31:04,870 - INFO - Processing a new step
+2024-07-01 10:31:04,871 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 7: 0.0 -> 0.0
+2024-07-01 10:31:04,872 - INFO - Choosing action 0 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,896 - INFO - Processing a new step
+2024-07-01 10:31:04,911 - INFO - Processing a new step
+2024-07-01 10:31:04,924 - INFO - Processing a new step
+2024-07-01 10:31:04,925 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,926 - INFO - Choosing action 0 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,939 - INFO - Processing a new step
+2024-07-01 10:31:04,957 - INFO - Processing a new step
+2024-07-01 10:31:04,973 - INFO - Processing a new step
+2024-07-01 10:31:04,974 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:04,975 - INFO - Choosing action 4 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:04,989 - INFO - Processing a new step
+2024-07-01 10:31:05,003 - INFO - Processing a new step
+2024-07-01 10:31:05,023 - INFO - Processing a new step
+2024-07-01 10:31:05,024 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 4: 0.0 -> 0.0
+2024-07-01 10:31:05,025 - INFO - Choosing action 0 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,038 - INFO - Processing a new step
+2024-07-01 10:31:05,052 - INFO - Processing a new step
+2024-07-01 10:31:05,068 - INFO - Processing a new step
+2024-07-01 10:31:05,068 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,070 - INFO - Choosing action 0 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,089 - INFO - Processing a new step
+2024-07-01 10:31:05,104 - INFO - Processing a new step
+2024-07-01 10:31:05,117 - INFO - Processing a new step
+2024-07-01 10:31:05,118 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,118 - INFO - Choosing action 0 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,134 - INFO - Processing a new step
+2024-07-01 10:31:05,152 - INFO - Processing a new step
+2024-07-01 10:31:05,164 - INFO - Processing a new step
+2024-07-01 10:31:05,166 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,167 - INFO - Choosing action 0 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,182 - INFO - Processing a new step
+2024-07-01 10:31:05,197 - INFO - Processing a new step
+2024-07-01 10:31:05,213 - INFO - Processing a new step
+2024-07-01 10:31:05,214 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,215 - INFO - Choosing action 0 for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,231 - INFO - Processing a new step
+2024-07-01 10:31:05,244 - INFO - Processing a new step
+2024-07-01 10:31:05,258 - INFO - Processing a new step
+2024-07-01 10:31:05,261 - INFO - Updated Q-value for state [1. 2. 2. 4. 1. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,262 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,281 - INFO - Processing a new step
+2024-07-01 10:31:05,294 - INFO - Processing a new step
+2024-07-01 10:31:05,308 - INFO - Processing a new step
+2024-07-01 10:31:05,311 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,311 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,327 - INFO - Processing a new step
+2024-07-01 10:31:05,346 - INFO - Processing a new step
+2024-07-01 10:31:05,361 - INFO - Processing a new step
+2024-07-01 10:31:05,362 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,363 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,381 - INFO - Processing a new step
+2024-07-01 10:31:05,400 - INFO - Processing a new step
+2024-07-01 10:31:05,418 - INFO - Processing a new step
+2024-07-01 10:31:05,419 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,419 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,437 - INFO - Processing a new step
+2024-07-01 10:31:05,457 - INFO - Processing a new step
+2024-07-01 10:31:05,472 - INFO - Processing a new step
+2024-07-01 10:31:05,474 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,474 - INFO - Choosing action 4 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,490 - INFO - Processing a new step
+2024-07-01 10:31:05,512 - INFO - Processing a new step
+2024-07-01 10:31:05,527 - INFO - Processing a new step
+2024-07-01 10:31:05,528 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 4: 0.0 -> 0.0
+2024-07-01 10:31:05,529 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,548 - INFO - Processing a new step
+2024-07-01 10:31:05,572 - INFO - Processing a new step
+2024-07-01 10:31:05,586 - INFO - Processing a new step
+2024-07-01 10:31:05,588 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,588 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:05,603 - INFO - Processing a new step
+2024-07-01 10:31:05,616 - INFO - Processing a new step
+2024-07-01 10:31:05,634 - INFO - Processing a new step
+2024-07-01 10:31:05,636 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,637 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,651 - INFO - Processing a new step
+2024-07-01 10:31:05,666 - INFO - Processing a new step
+2024-07-01 10:31:05,680 - INFO - Processing a new step
+2024-07-01 10:31:05,681 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,682 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,700 - INFO - Processing a new step
+2024-07-01 10:31:05,716 - INFO - Processing a new step
+2024-07-01 10:31:05,730 - INFO - Processing a new step
+2024-07-01 10:31:05,731 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,732 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,747 - INFO - Processing a new step
+2024-07-01 10:31:05,764 - INFO - Processing a new step
+2024-07-01 10:31:05,777 - INFO - Processing a new step
+2024-07-01 10:31:05,778 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,779 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,793 - INFO - Processing a new step
+2024-07-01 10:31:05,807 - INFO - Processing a new step
+2024-07-01 10:31:05,824 - INFO - Processing a new step
+2024-07-01 10:31:05,826 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,826 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,840 - INFO - Processing a new step
+2024-07-01 10:31:05,854 - INFO - Processing a new step
+2024-07-01 10:31:05,869 - INFO - Processing a new step
+2024-07-01 10:31:05,869 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,870 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,890 - INFO - Processing a new step
+2024-07-01 10:31:05,906 - INFO - Processing a new step
+2024-07-01 10:31:05,922 - INFO - Processing a new step
+2024-07-01 10:31:05,923 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:05,923 - INFO - Choosing action 3 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,939 - INFO - Processing a new step
+2024-07-01 10:31:05,957 - INFO - Processing a new step
+2024-07-01 10:31:05,972 - INFO - Processing a new step
+2024-07-01 10:31:05,973 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:31:05,974 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:05,988 - INFO - Processing a new step
+2024-07-01 10:31:06,003 - INFO - Processing a new step
+2024-07-01 10:31:06,020 - INFO - Processing a new step
+2024-07-01 10:31:06,022 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,022 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,037 - INFO - Processing a new step
+2024-07-01 10:31:06,051 - INFO - Processing a new step
+2024-07-01 10:31:06,066 - INFO - Processing a new step
+2024-07-01 10:31:06,068 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,068 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,083 - INFO - Processing a new step
+2024-07-01 10:31:06,098 - INFO - Processing a new step
+2024-07-01 10:31:06,116 - INFO - Processing a new step
+2024-07-01 10:31:06,117 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,118 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,132 - INFO - Processing a new step
+2024-07-01 10:31:06,151 - INFO - Processing a new step
+2024-07-01 10:31:06,164 - INFO - Processing a new step
+2024-07-01 10:31:06,166 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,168 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,183 - INFO - Processing a new step
+2024-07-01 10:31:06,196 - INFO - Processing a new step
+2024-07-01 10:31:06,222 - INFO - Processing a new step
+2024-07-01 10:31:06,223 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,223 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,240 - INFO - Processing a new step
+2024-07-01 10:31:06,254 - INFO - Processing a new step
+2024-07-01 10:31:06,267 - INFO - Processing a new step
+2024-07-01 10:31:06,269 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,269 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,288 - INFO - Processing a new step
+2024-07-01 10:31:06,303 - INFO - Processing a new step
+2024-07-01 10:31:06,322 - INFO - Processing a new step
+2024-07-01 10:31:06,323 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,324 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,349 - INFO - Processing a new step
+2024-07-01 10:31:06,371 - INFO - Processing a new step
+2024-07-01 10:31:06,387 - INFO - Processing a new step
+2024-07-01 10:31:06,388 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,388 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,406 - INFO - Processing a new step
+2024-07-01 10:31:06,421 - INFO - Processing a new step
+2024-07-01 10:31:06,435 - INFO - Processing a new step
+2024-07-01 10:31:06,436 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,437 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,453 - INFO - Processing a new step
+2024-07-01 10:31:06,474 - INFO - Processing a new step
+2024-07-01 10:31:06,488 - INFO - Processing a new step
+2024-07-01 10:31:06,489 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,490 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,504 - INFO - Processing a new step
+2024-07-01 10:31:06,518 - INFO - Processing a new step
+2024-07-01 10:31:06,537 - INFO - Processing a new step
+2024-07-01 10:31:06,538 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,538 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,552 - INFO - Processing a new step
+2024-07-01 10:31:06,567 - INFO - Processing a new step
+2024-07-01 10:31:06,582 - INFO - Processing a new step
+2024-07-01 10:31:06,583 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,584 - INFO - Choosing action 6 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,604 - INFO - Processing a new step
+2024-07-01 10:31:06,621 - INFO - Processing a new step
+2024-07-01 10:31:06,634 - INFO - Processing a new step
+2024-07-01 10:31:06,635 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 6: 0.0 -> 0.0
+2024-07-01 10:31:06,636 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,650 - INFO - Processing a new step
+2024-07-01 10:31:06,667 - INFO - Processing a new step
+2024-07-01 10:31:06,681 - INFO - Processing a new step
+2024-07-01 10:31:06,682 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,683 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:06,696 - INFO - Processing a new step
+2024-07-01 10:31:06,711 - INFO - Processing a new step
+2024-07-01 10:31:06,734 - INFO - Processing a new step
+2024-07-01 10:31:06,735 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,736 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:06,753 - INFO - Processing a new step
+2024-07-01 10:31:06,776 - INFO - Processing a new step
+2024-07-01 10:31:06,793 - INFO - Processing a new step
+2024-07-01 10:31:06,794 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,794 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:06,813 - INFO - Processing a new step
+2024-07-01 10:31:06,828 - INFO - Processing a new step
+2024-07-01 10:31:06,847 - INFO - Processing a new step
+2024-07-01 10:31:06,849 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,849 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:06,862 - INFO - Processing a new step
+2024-07-01 10:31:06,877 - INFO - Processing a new step
+2024-07-01 10:31:06,893 - INFO - Processing a new step
+2024-07-01 10:31:06,894 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:06,894 - INFO - Choosing action 4 for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:06,913 - INFO - Processing a new step
+2024-07-01 10:31:06,931 - INFO - Processing a new step
+2024-07-01 10:31:06,945 - INFO - Processing a new step
+2024-07-01 10:31:06,946 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 1. 0. 0. 1. 1. 0. 0.], action 4: 0.0 -> 0.0
+2024-07-01 10:31:06,947 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:06,960 - INFO - Processing a new step
+2024-07-01 10:31:06,982 - INFO - Processing a new step
+2024-07-01 10:31:06,999 - INFO - Processing a new step
+2024-07-01 10:31:06,999 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,000 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,018 - INFO - Processing a new step
+2024-07-01 10:31:07,036 - INFO - Processing a new step
+2024-07-01 10:31:07,049 - INFO - Processing a new step
+2024-07-01 10:31:07,050 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,051 - INFO - Choosing action 6 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:07,067 - INFO - Processing a new step
+2024-07-01 10:31:07,083 - INFO - Processing a new step
+2024-07-01 10:31:07,102 - INFO - Processing a new step
+2024-07-01 10:31:07,103 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 6: 0.0 -> 0.0
+2024-07-01 10:31:07,104 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.]
+2024-07-01 10:31:07,118 - INFO - Processing a new step
+2024-07-01 10:31:07,132 - INFO - Processing a new step
+2024-07-01 10:31:07,147 - INFO - Processing a new step
+2024-07-01 10:31:07,149 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 0. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,149 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,169 - INFO - Processing a new step
+2024-07-01 10:31:07,183 - INFO - Processing a new step
+2024-07-01 10:31:07,196 - INFO - Processing a new step
+2024-07-01 10:31:07,198 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,198 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,214 - INFO - Processing a new step
+2024-07-01 10:31:07,231 - INFO - Processing a new step
+2024-07-01 10:31:07,245 - INFO - Processing a new step
+2024-07-01 10:31:07,248 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,248 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,263 - INFO - Processing a new step
+2024-07-01 10:31:07,278 - INFO - Processing a new step
+2024-07-01 10:31:07,297 - INFO - Processing a new step
+2024-07-01 10:31:07,298 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,299 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,314 - INFO - Processing a new step
+2024-07-01 10:31:07,327 - INFO - Processing a new step
+2024-07-01 10:31:07,343 - INFO - Processing a new step
+2024-07-01 10:31:07,345 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,345 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,364 - INFO - Processing a new step
+2024-07-01 10:31:07,379 - INFO - Processing a new step
+2024-07-01 10:31:07,394 - INFO - Processing a new step
+2024-07-01 10:31:07,395 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,396 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,409 - INFO - Processing a new step
+2024-07-01 10:31:07,428 - INFO - Processing a new step
+2024-07-01 10:31:07,445 - INFO - Processing a new step
+2024-07-01 10:31:07,447 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,448 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,463 - INFO - Processing a new step
+2024-07-01 10:31:07,482 - INFO - Processing a new step
+2024-07-01 10:31:07,496 - INFO - Processing a new step
+2024-07-01 10:31:07,497 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,498 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,512 - INFO - Processing a new step
+2024-07-01 10:31:07,528 - INFO - Processing a new step
+2024-07-01 10:31:07,546 - INFO - Processing a new step
+2024-07-01 10:31:07,547 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,547 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,562 - INFO - Processing a new step
+2024-07-01 10:31:07,577 - INFO - Processing a new step
+2024-07-01 10:31:07,590 - INFO - Processing a new step
+2024-07-01 10:31:07,591 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,592 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,611 - INFO - Processing a new step
+2024-07-01 10:31:07,626 - INFO - Processing a new step
+2024-07-01 10:31:07,642 - INFO - Processing a new step
+2024-07-01 10:31:07,643 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,644 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,657 - INFO - Processing a new step
+2024-07-01 10:31:07,677 - INFO - Processing a new step
+2024-07-01 10:31:07,693 - INFO - Processing a new step
+2024-07-01 10:31:07,694 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,694 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,709 - INFO - Processing a new step
+2024-07-01 10:31:07,723 - INFO - Processing a new step
+2024-07-01 10:31:07,741 - INFO - Processing a new step
+2024-07-01 10:31:07,742 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,742 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,757 - INFO - Processing a new step
+2024-07-01 10:31:07,771 - INFO - Processing a new step
+2024-07-01 10:31:07,787 - INFO - Processing a new step
+2024-07-01 10:31:07,788 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,789 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,807 - INFO - Processing a new step
+2024-07-01 10:31:07,821 - INFO - Processing a new step
+2024-07-01 10:31:07,836 - INFO - Processing a new step
+2024-07-01 10:31:07,837 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,838 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,853 - INFO - Processing a new step
+2024-07-01 10:31:07,870 - INFO - Processing a new step
+2024-07-01 10:31:07,886 - INFO - Processing a new step
+2024-07-01 10:31:07,887 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,888 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,901 - INFO - Processing a new step
+2024-07-01 10:31:07,915 - INFO - Processing a new step
+2024-07-01 10:31:07,933 - INFO - Processing a new step
+2024-07-01 10:31:07,933 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,935 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:07,951 - INFO - Processing a new step
+2024-07-01 10:31:07,965 - INFO - Processing a new step
+2024-07-01 10:31:07,980 - INFO - Processing a new step
+2024-07-01 10:31:07,981 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:07,982 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,003 - INFO - Processing a new step
+2024-07-01 10:31:08,019 - INFO - Processing a new step
+2024-07-01 10:31:08,034 - INFO - Processing a new step
+2024-07-01 10:31:08,035 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,036 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,051 - INFO - Processing a new step
+2024-07-01 10:31:08,068 - INFO - Processing a new step
+2024-07-01 10:31:08,082 - INFO - Processing a new step
+2024-07-01 10:31:08,083 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,084 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,101 - INFO - Processing a new step
+2024-07-01 10:31:08,116 - INFO - Processing a new step
+2024-07-01 10:31:08,137 - INFO - Processing a new step
+2024-07-01 10:31:08,138 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,138 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,154 - INFO - Processing a new step
+2024-07-01 10:31:08,169 - INFO - Processing a new step
+2024-07-01 10:31:08,183 - INFO - Processing a new step
+2024-07-01 10:31:08,185 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,186 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,206 - INFO - Processing a new step
+2024-07-01 10:31:08,220 - INFO - Processing a new step
+2024-07-01 10:31:08,235 - INFO - Processing a new step
+2024-07-01 10:31:08,236 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,237 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,251 - INFO - Processing a new step
+2024-07-01 10:31:08,269 - INFO - Processing a new step
+2024-07-01 10:31:08,283 - INFO - Processing a new step
+2024-07-01 10:31:08,284 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,285 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,300 - INFO - Processing a new step
+2024-07-01 10:31:08,313 - INFO - Processing a new step
+2024-07-01 10:31:08,331 - INFO - Processing a new step
+2024-07-01 10:31:08,332 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,333 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,348 - INFO - Processing a new step
+2024-07-01 10:31:08,363 - INFO - Processing a new step
+2024-07-01 10:31:08,378 - INFO - Processing a new step
+2024-07-01 10:31:08,380 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,381 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,399 - INFO - Processing a new step
+2024-07-01 10:31:08,417 - INFO - Processing a new step
+2024-07-01 10:31:08,433 - INFO - Processing a new step
+2024-07-01 10:31:08,434 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,435 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,449 - INFO - Processing a new step
+2024-07-01 10:31:08,468 - INFO - Processing a new step
+2024-07-01 10:31:08,482 - INFO - Processing a new step
+2024-07-01 10:31:08,483 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,485 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,499 - INFO - Processing a new step
+2024-07-01 10:31:08,514 - INFO - Processing a new step
+2024-07-01 10:31:08,532 - INFO - Processing a new step
+2024-07-01 10:31:08,534 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,534 - INFO - Choosing action 6 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,549 - INFO - Processing a new step
+2024-07-01 10:31:08,567 - INFO - Processing a new step
+2024-07-01 10:31:08,581 - INFO - Processing a new step
+2024-07-01 10:31:08,582 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 6: 0.0 -> 0.0
+2024-07-01 10:31:08,583 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,602 - INFO - Processing a new step
+2024-07-01 10:31:08,617 - INFO - Processing a new step
+2024-07-01 10:31:08,632 - INFO - Processing a new step
+2024-07-01 10:31:08,633 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,634 - INFO - Choosing action 0 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,651 - INFO - Processing a new step
+2024-07-01 10:31:08,670 - INFO - Processing a new step
+2024-07-01 10:31:08,685 - INFO - Processing a new step
+2024-07-01 10:31:08,686 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,686 - INFO - Choosing action 3 for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,705 - INFO - Processing a new step
+2024-07-01 10:31:08,718 - INFO - Processing a new step
+2024-07-01 10:31:08,740 - INFO - Processing a new step
+2024-07-01 10:31:08,742 - INFO - Updated Q-value for state [1. 2. 2. 4. 0. 0. 0. 0. 1. 1. 0. 0.], action 3: 0.0 -> 0.0
+2024-07-01 10:31:08,743 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,757 - INFO - Processing a new step
+2024-07-01 10:31:08,771 - INFO - Processing a new step
+2024-07-01 10:31:08,786 - INFO - Processing a new step
+2024-07-01 10:31:08,787 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,788 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,806 - INFO - Processing a new step
+2024-07-01 10:31:08,823 - INFO - Processing a new step
+2024-07-01 10:31:08,838 - INFO - Processing a new step
+2024-07-01 10:31:08,840 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,840 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,860 - INFO - Processing a new step
+2024-07-01 10:31:08,875 - INFO - Processing a new step
+2024-07-01 10:31:08,890 - INFO - Processing a new step
+2024-07-01 10:31:08,891 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,891 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,907 - INFO - Processing a new step
+2024-07-01 10:31:08,924 - INFO - Processing a new step
+2024-07-01 10:31:08,938 - INFO - Processing a new step
+2024-07-01 10:31:08,940 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,941 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:08,956 - INFO - Processing a new step
+2024-07-01 10:31:08,970 - INFO - Processing a new step
+2024-07-01 10:31:08,988 - INFO - Processing a new step
+2024-07-01 10:31:08,989 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:08,990 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,004 - INFO - Processing a new step
+2024-07-01 10:31:09,019 - INFO - Processing a new step
+2024-07-01 10:31:09,034 - INFO - Processing a new step
+2024-07-01 10:31:09,035 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,035 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,056 - INFO - Processing a new step
+2024-07-01 10:31:09,069 - INFO - Processing a new step
+2024-07-01 10:31:09,084 - INFO - Processing a new step
+2024-07-01 10:31:09,085 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,085 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,101 - INFO - Processing a new step
+2024-07-01 10:31:09,122 - INFO - Processing a new step
+2024-07-01 10:31:09,137 - INFO - Processing a new step
+2024-07-01 10:31:09,139 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,141 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,156 - INFO - Processing a new step
+2024-07-01 10:31:09,170 - INFO - Processing a new step
+2024-07-01 10:31:09,189 - INFO - Processing a new step
+2024-07-01 10:31:09,189 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,190 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,205 - INFO - Processing a new step
+2024-07-01 10:31:09,221 - INFO - Processing a new step
+2024-07-01 10:31:09,234 - INFO - Processing a new step
+2024-07-01 10:31:09,236 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,236 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,257 - INFO - Processing a new step
+2024-07-01 10:31:09,272 - INFO - Processing a new step
+2024-07-01 10:31:09,289 - INFO - Processing a new step
+2024-07-01 10:31:09,291 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,291 - INFO - Choosing action 7 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,311 - INFO - Processing a new step
+2024-07-01 10:31:09,329 - INFO - Processing a new step
+2024-07-01 10:31:09,343 - INFO - Processing a new step
+2024-07-01 10:31:09,344 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 7: 0.0 -> 0.0
+2024-07-01 10:31:09,345 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,361 - INFO - Processing a new step
+2024-07-01 10:31:09,381 - INFO - Processing a new step
+2024-07-01 10:31:09,397 - INFO - Processing a new step
+2024-07-01 10:31:09,398 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,398 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,412 - INFO - Processing a new step
+2024-07-01 10:31:09,428 - INFO - Processing a new step
+2024-07-01 10:31:09,446 - INFO - Processing a new step
+2024-07-01 10:31:09,447 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,448 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,464 - INFO - Processing a new step
+2024-07-01 10:31:09,478 - INFO - Processing a new step
+2024-07-01 10:31:09,494 - INFO - Processing a new step
+2024-07-01 10:31:09,496 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,496 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,514 - INFO - Processing a new step
+2024-07-01 10:31:09,529 - INFO - Processing a new step
+2024-07-01 10:31:09,543 - INFO - Processing a new step
+2024-07-01 10:31:09,545 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,546 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,562 - INFO - Processing a new step
+2024-07-01 10:31:09,580 - INFO - Processing a new step
+2024-07-01 10:31:09,596 - INFO - Processing a new step
+2024-07-01 10:31:09,597 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,598 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,614 - INFO - Processing a new step
+2024-07-01 10:31:09,628 - INFO - Processing a new step
+2024-07-01 10:31:09,651 - INFO - Processing a new step
+2024-07-01 10:31:09,652 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,652 - INFO - Choosing action 6 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,669 - INFO - Processing a new step
+2024-07-01 10:31:09,686 - INFO - Processing a new step
+2024-07-01 10:31:09,706 - INFO - Processing a new step
+2024-07-01 10:31:09,709 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 6: 0.0 -> 0.0
+2024-07-01 10:31:09,709 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,724 - INFO - Processing a new step
+2024-07-01 10:31:09,740 - INFO - Processing a new step
+2024-07-01 10:31:09,754 - INFO - Processing a new step
+2024-07-01 10:31:09,755 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,755 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,777 - INFO - Processing a new step
+2024-07-01 10:31:09,795 - INFO - Processing a new step
+2024-07-01 10:31:09,809 - INFO - Processing a new step
+2024-07-01 10:31:09,811 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,811 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,826 - INFO - Processing a new step
+2024-07-01 10:31:09,848 - INFO - Processing a new step
+2024-07-01 10:31:09,863 - INFO - Processing a new step
+2024-07-01 10:31:09,864 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,864 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,881 - INFO - Processing a new step
+2024-07-01 10:31:09,902 - INFO - Processing a new step
+2024-07-01 10:31:09,918 - INFO - Processing a new step
+2024-07-01 10:31:09,919 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,920 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,936 - INFO - Processing a new step
+2024-07-01 10:31:09,951 - INFO - Processing a new step
+2024-07-01 10:31:09,972 - INFO - Processing a new step
+2024-07-01 10:31:09,973 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:09,973 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:09,989 - INFO - Processing a new step
+2024-07-01 10:31:10,007 - INFO - Processing a new step
+2024-07-01 10:31:10,026 - INFO - Processing a new step
+2024-07-01 10:31:10,027 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,029 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,047 - INFO - Processing a new step
+2024-07-01 10:31:10,064 - INFO - Processing a new step
+2024-07-01 10:31:10,084 - INFO - Processing a new step
+2024-07-01 10:31:10,085 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,086 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,102 - INFO - Processing a new step
+2024-07-01 10:31:10,117 - INFO - Processing a new step
+2024-07-01 10:31:10,131 - INFO - Processing a new step
+2024-07-01 10:31:10,132 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,133 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,153 - INFO - Processing a new step
+2024-07-01 10:31:10,168 - INFO - Processing a new step
+2024-07-01 10:31:10,189 - INFO - Processing a new step
+2024-07-01 10:31:10,190 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,190 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,220 - INFO - Processing a new step
+2024-07-01 10:31:10,242 - INFO - Processing a new step
+2024-07-01 10:31:10,257 - INFO - Processing a new step
+2024-07-01 10:31:10,258 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,258 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,279 - INFO - Processing a new step
+2024-07-01 10:31:10,304 - INFO - Processing a new step
+2024-07-01 10:31:10,319 - INFO - Processing a new step
+2024-07-01 10:31:10,320 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,320 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,340 - INFO - Processing a new step
+2024-07-01 10:31:10,355 - INFO - Processing a new step
+2024-07-01 10:31:10,371 - INFO - Processing a new step
+2024-07-01 10:31:10,372 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,373 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,387 - INFO - Processing a new step
+2024-07-01 10:31:10,406 - INFO - Processing a new step
+2024-07-01 10:31:10,420 - INFO - Processing a new step
+2024-07-01 10:31:10,421 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,421 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,436 - INFO - Processing a new step
+2024-07-01 10:31:10,451 - INFO - Processing a new step
+2024-07-01 10:31:10,470 - INFO - Processing a new step
+2024-07-01 10:31:10,471 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,471 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,486 - INFO - Processing a new step
+2024-07-01 10:31:10,503 - INFO - Processing a new step
+2024-07-01 10:31:10,518 - INFO - Processing a new step
+2024-07-01 10:31:10,519 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,519 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 1. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,538 - INFO - Processing a new step
+2024-07-01 10:31:10,555 - INFO - Processing a new step
+2024-07-01 10:31:10,571 - INFO - Processing a new step
+2024-07-01 10:31:10,572 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 1. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,573 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,587 - INFO - Processing a new step
+2024-07-01 10:31:10,607 - INFO - Processing a new step
+2024-07-01 10:31:10,621 - INFO - Processing a new step
+2024-07-01 10:31:10,622 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,623 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,639 - INFO - Processing a new step
+2024-07-01 10:31:10,653 - INFO - Processing a new step
+2024-07-01 10:31:10,672 - INFO - Processing a new step
+2024-07-01 10:31:10,673 - INFO - Updated Q-value for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.], action 0: 0.0 -> 0.0
+2024-07-01 10:31:10,674 - INFO - Choosing action 0 for state [1. 2. 2. 5. 0. 0. 0. 0. 1. 1. 0. 0.]
+2024-07-01 10:31:10,674 - INFO - Environment Close
+2024-07-01 10:31:10,784 - INFO - Shutdown gracefully.
+2024-07-01 10:31:10,784 - INFO - Shutdown with return code: 1
+2024-07-01 10:31:10,788 - INFO - Environment Close

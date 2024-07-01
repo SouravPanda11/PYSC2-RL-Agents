@@ -359,7 +359,7 @@ class SparseAgent(base_agent.BaseAgent):
         return actions.FunctionCall(_NO_OP, [])
 
 def main():
-    max_episodes = 100
+    max_episodes = 1000
     flags.FLAGS(sys.argv)
 
     try:
@@ -379,7 +379,7 @@ def main():
     except KeyboardInterrupt:
         print("Interrupted")
     finally:
-        agent.qlearn.save(f"Q_table_maxep_{max_episodes}.csv")
+        agent.qlearn.save(f"Q_{max_episodes}.csv")
 
 
 if __name__ == "__main__":

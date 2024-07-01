@@ -5,9 +5,13 @@ import numpy as np
 import pandas as pd
 import sys
 import absl.flags as flags
+import logging  # Import the logging module
 from pysc2.agents import base_agent
 from pysc2.env import sc2_env, run_loop
 from pysc2.lib import features, actions
+
+# Setup logging
+logging.basicConfig(filename='agent_logs.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Constants for actions
 _NO_OP = actions.FUNCTIONS.no_op.id
@@ -62,10 +66,18 @@ for mm_x in range(0, 64):
         if (mm_x + 1) % 32 == 0 and (mm_y + 1) % 32 == 0:
             smart_actions.append(ACTION_ATTACK + '_' + str(mm_x - 16) + '_' + str(mm_y - 16))
 
-# Stolen from https://github.com/MorvanZhou/Reinforcement-learning-with-tensorflow
 class QLearningTable:
     def __init__(self, actions, learning_rate=0.01, reward_decay=0.9, e_greedy=0.9):
-        self.actions = actions  # a list
+        """
+        Initialize the Q-learning table.
+        
+        Parameters:
+            actions (list): List of possible actions.
+            learning_rate (float): Learning rate (alpha).
+            reward_decay (float): Discount factor (gamma).
+            e_greedy (float): Exploration-exploitation tradeoff parameter (epsilon).
+        """
+        self.actions = actions  # a list of actions
         self.lr = learning_rate
         self.gamma = reward_decay
         self.epsilon = e_greedy
@@ -73,56 +85,78 @@ class QLearningTable:
         self.disallowed_actions = {}
 
     def choose_action(self, observation, excluded_actions=[]):
+        """
+        Choose an action based on the state (observation).
+
+        Parameters:
+            observation: The current state.
+            excluded_actions (list): Actions that should be excluded in the current state.
+
+        Returns:
+            action: Selected action as a response to the current state.
+        """
         self.check_state_exist(observation)
-        
-        self.disallowed_actions[observation] = excluded_actions
-        
         state_action = self.q_table.loc[observation, :]
         
-        for excluded_action in excluded_actions:
-            del state_action[excluded_action]
+        # Exclude the disallowed actions
+        state_action = state_action.drop(labels=excluded_actions, errors='ignore')
+
+        # Handling the case where no actions are available
+        if state_action.empty:
+            logging.warning(f"No available actions for state {observation}, performing NO_OP")
+            return 'donothing'  # Assume there is an action defined as 'donothing'
 
         if np.random.uniform() < self.epsilon:
-            # some actions have the same value
-            state_action = state_action.reindex(np.random.permutation(state_action.index))
-            
+            # Choosing the best action based on Q-values
             action = state_action.idxmax()
         else:
+            # Choosing a random action
             action = np.random.choice(state_action.index)
-            
+
+        logging.info(f"Choosing action {action} for state {observation}")
         return action
 
     def learn(self, s, a, r, s_):
-        if s == s_:
-            return
-        
+        """
+        Update the Q-table using the learning rule based on the transition.
+
+        Parameters:
+            s: Current state.
+            a: Action taken.
+            r: Reward received.
+            s_: Next state.
+        """
         self.check_state_exist(s_)
         self.check_state_exist(s)
         
         q_predict = self.q_table.loc[s, a]
-        
-        s_rewards = self.q_table.loc[s_, :]
-        
-        if s_ in self.disallowed_actions:
-            for excluded_action in self.disallowed_actions[s_]:
-                del s_rewards[excluded_action]
-        
         if s_ != 'terminal':
-            q_target = r + self.gamma * s_rewards.max()
+            q_target = r + self.gamma * self.q_table.loc[s_, :].max()  # Bellman equation
         else:
-            q_target = r  # next state is terminal
-            
-        # update
-        self.q_table.loc[s, a] += self.lr * (q_target - q_predict)
+            q_target = r  # No future reward if next state is terminal
+        
+        self.q_table.loc[s, a] += self.lr * (q_target - q_predict)  # Update Q-value
+        logging.info(f"Updated Q-value for state {s}, action {a}: {q_predict} -> {q_target}")
 
     def check_state_exist(self, state):
+        """
+        Check if a state exists in the Q-table, and if not, add it.
+
+        Parameters:
+            state: The state to check in the Q-table.
+        """
         if state not in self.q_table.index:
-            # append new state to q table
+            # Append new state to q table
             new_row = pd.Series([0]*len(self.actions), index=self.q_table.columns, name=state)
-            self.q_table = pd.concat([self.q_table, pd.DataFrame(new_row).T], ignore_index=False)
+            self.q_table = pd.concat([self.q_table, pd.DataFrame(new_row).T])
 
     def save(self, filename):
-        """Save the Q-table to a CSV file, ensuring the directory exists."""
+        """
+        Save the Q-table to a CSV file.
+
+        Parameters:
+            filename: The name of the file to save the Q-table to.
+        """
         full_path = os.path.join('Q-tables', filename)
         directory = os.path.dirname(full_path)
         if not os.path.exists(directory):
@@ -131,21 +165,14 @@ class QLearningTable:
         
 class SparseAgent(base_agent.BaseAgent):
     def __init__(self):
-        super(SparseAgent, self).__init__()
-        
-        self.qlearn = QLearningTable(actions=list(range(len(smart_actions))))
-        
+        super(SparseAgent, self).__init__()        
+        self.qlearn = QLearningTable(actions=list(range(len(smart_actions))))        
         self.previous_action = None
-        self.previous_state = None
-        
+        self.previous_state = None        
         self.cc_y = None
         self.cc_x = None
-        
         self.move_number = 0
-        
-        data_file_path = os.path.join(data_directory, DATA_FILE + '.gz')
-        if os.path.isfile(data_file_path):
-            self.qlearn.q_table = pd.read_pickle(data_file_path, compression='gzip')
+        logging.info("Initializing the SparseAgent")
         
     def transformDistance(self, x, x_distance, y, y_distance):
         if not self.base_top_left:
@@ -170,6 +197,7 @@ class SparseAgent(base_agent.BaseAgent):
         return (smart_action, x, y)
         
     def step(self, obs):
+        logging.info("Processing a new step")
         super(SparseAgent, self).step(obs)
         
         if obs.last():
@@ -359,13 +387,7 @@ class SparseAgent(base_agent.BaseAgent):
         return actions.FunctionCall(_NO_OP, [])
 
 def main():
-    max_episodes = 1000  # Increased number of episodes
-    evaluation_interval = 100
-    early_stopping_threshold = 300  # Stop if no improvement for 300 episodes
-    best_avg_reward = -np.inf
-    no_improvement_counter = 0
-    rewards = []
-
+    max_episodes = 1000
     flags.FLAGS(sys.argv)
 
     try:
@@ -381,29 +403,12 @@ def main():
             visualize=True
         ) as env:
             agent = SparseAgent()
-            for episode in range(max_episodes):
-                run_loop.run_loop([agent], env, 1)
-                rewards.append(agent.episode_reward)
-
-                if episode % evaluation_interval == 0:
-                    avg_reward = np.mean(rewards[-evaluation_interval:])
-                    print(f'Episode {episode}, Average Reward: {avg_reward}')
-
-                    if avg_reward > best_avg_reward:
-                        best_avg_reward = avg_reward
-                        agent.qlearn.save(f"best_q_table_episode_{episode}.csv")
-                        no_improvement_counter = 0
-                    else:
-                        no_improvement_counter += evaluation_interval
-
-                    if no_improvement_counter >= early_stopping_threshold:
-                        print(f"No improvement for {early_stopping_threshold} episodes. Early stopping...")
-                        break
-
+            run_loop.run_loop([agent], env, max_episodes)
     except KeyboardInterrupt:
         print("Interrupted")
     finally:
-        agent.qlearn.save(f"Q_table_maxep_{max_episodes}.csv")
+        agent.qlearn.save(f"Q_{max_episodes}.csv")
+
 
 if __name__ == "__main__":
     main()
