@@ -10,7 +10,7 @@ from pysc2.agents import base_agent
 from pysc2.env import sc2_env, run_loop
 from pysc2.lib import features, actions
 
-max_episodes = 100  # Define the maximum episodes variable
+max_episodes = 100000  # Define the maximum episodes variable
 # Setup logging with dynamic filename based on max_episodes
 logging.basicConfig(filename=f'agent_logs_{max_episodes}.log', level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
