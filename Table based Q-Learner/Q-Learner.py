@@ -168,9 +168,9 @@ class QLearningTable:
             os.makedirs(directory, exist_ok=True)
         self.q_table.to_csv(full_path)
         
-class SparseAgent(base_agent.BaseAgent):
+class Agent(base_agent.BaseAgent):
     def __init__(self):
-        super(SparseAgent, self).__init__()        
+        super(Agent, self).__init__()        
         self.qlearn = QLearningTable(actions=list(range(len(smart_actions))))        
         self.previous_action = None
         self.previous_state = None        
@@ -203,7 +203,7 @@ class SparseAgent(base_agent.BaseAgent):
         
     def step(self, obs):
         logging.info("Processing a new step")
-        super(SparseAgent, self).step(obs)
+        super(Agent, self).step(obs)
         
         if obs.last():
             reward = obs.reward
@@ -405,7 +405,7 @@ def main():
             game_steps_per_episode=0,
             visualize=True
         ) as env:
-            agent = SparseAgent()
+            agent = Agent()
             run_loop.run_loop([agent], env, max_episodes)
     except KeyboardInterrupt:
         print("Interrupted")
