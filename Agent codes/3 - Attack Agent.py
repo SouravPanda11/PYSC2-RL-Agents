@@ -1,14 +1,15 @@
 import random
-import numpy as np
 import pandas as pd
+import numpy as np
 from pysc2.agents import base_agent
 from pysc2.env import sc2_env, run_loop
 from pysc2.lib import features, actions
 import sys
 import absl.flags as flags
 import os
+import math
 
-# Functions
+# Constants for actions
 # Identifier for the action to build a Barracks on the game screen, an essential military production building.
 _BUILD_BARRACKS = actions.FUNCTIONS.Build_Barracks_screen.id
 # Identifier for the action to build a Supply Depot on the game screen, a structure that increases the supply limit.
@@ -30,6 +31,13 @@ _PLAYER_RELATIVE = features.SCREEN_FEATURES.player_relative.index
 # Index for the 'unit_type' feature layer in screen features, indicating the type of each unit or structure visible on screen.
 _UNIT_TYPE = features.SCREEN_FEATURES.unit_type.index
 
+# Constants for identification
+# Identifier for the player's own units and structures within the game environment.
+_PLAYER_SELF = 1
+# Identifier for enemy units and structures on the minimap, used to detect and interact with hostile elements.
+_PLAYER_HOSTILE = 4
+
+
 # Unit IDs
 # Unit identifier for Terran Barracks, used for training infantry units like Marines.
 _TERRAN_BARRACKS = 21
@@ -40,14 +48,13 @@ _TERRAN_SUPPLY_DEPOT = 19
 # Unit identifier for Terran SCV, the worker unit responsible for resource gathering and building construction.
 _TERRAN_SCV = 45
 
-# Parameters
-# Identifier for the player's own units and structures within the game environment.
-_PLAYER_SELF = 1
+# Constants for actions queue
 # Command modifier indicating that an action should not be queued but executed immediately.
 _NOT_QUEUED = [0]
 # Command modifier indicating that an action should be added to the current queue of actions.
 _QUEUED = [1]
 
+# Action definitions
 # Definition of action constants
 # Represents an action where the agent performs no operation during a game tick.
 ACTION_DO_NOTHING = 'donothing' 
@@ -66,8 +73,7 @@ ACTION_SELECT_ARMY = 'selectarmy'
 # Instructs the selected units to perform an attack move, typically directed towards a location on the minimap, enabling offensive strategies.
 ACTION_ATTACK = 'attack'
 
-# List of all defined actions
-# This list compiles all the available actions into a single array, making it easy to iterate over or select from during the decision-making process.
+# List of all actions for the agent
 smart_actions = [
     ACTION_DO_NOTHING,
     ACTION_SELECT_SCV,
@@ -76,8 +82,18 @@ smart_actions = [
     ACTION_SELECT_BARRACKS,
     ACTION_BUILD_MARINE,
     ACTION_SELECT_ARMY,
-    ACTION_ATTACK,
 ]
+
+# Generate attack actions for a reduced set of critical points on the mini-map.
+# The map is divided into a 4x4 grid, and attack actions are created for the center of each 16x16 block.
+# This approach reduces the complexity of the action space, focusing on strategically relevant areas of the map.
+for mm_x in range(0, 64):
+    for mm_y in range(0, 64):
+        # Ensure that the actions are created for every 16th coordinate on both x and y axes,
+        # effectively creating a grid. The attack coordinates are then centered by subtracting 8,
+        # positioning the action in the middle of each 16x16 block.
+        if (mm_x + 1) % 16 == 0 and (mm_y + 1) % 16 == 0:
+            smart_actions.append(ACTION_ATTACK + '_' + str(mm_x - 8) + '_' + str(mm_y - 8))
 
 # Reward values for specific in-game achievements
 # Assigns a reward value for each enemy unit killed by the agent. This incentivizes the agent to engage in combat and eliminate enemy forces.
@@ -184,10 +200,10 @@ class QLearningTable:
         self.q_table.to_csv(full_path)
 
         print(f"Q-table successfully saved to {full_path}")
-        
-class SmartAgent(base_agent.BaseAgent):
+    
+class AttackAgent(base_agent.BaseAgent):
     def __init__(self):
-        super(SmartAgent, self).__init__()
+        super(AttackAgent, self).__init__()
         # Initialize the Q-learning table with the range of action indices.
         self.qlearn = QLearningTable(actions=list(range(len(smart_actions))))
         # Track scores for killed units and buildings to calculate rewards.
@@ -197,63 +213,140 @@ class SmartAgent(base_agent.BaseAgent):
         self.previous_action = None
         self.previous_state = None
         
-    def transformLocation(self, x, x_distance, y, y_distance):
+    def transformDistance(self, x, x_distance, y, y_distance):
+        """
+        Adjusts the position based on the relative distance from a reference point,
+        considering whether the base is located at the top left or not.
+        
+        Args:
+        x (int): Base x-coordinate on the screen or minimap.
+        x_distance (int): Horizontal distance to offset from the base x-coordinate.
+        y (int): Base y-coordinate on the screen or minimap.
+        y_distance (int): Vertical distance to offset from the base y-coordinate.
+        
+        Returns:
+        list: A list containing the transformed [x, y] coordinates.
+        """
+        # If the base is not at the top left, adjust by subtracting the distances.
         if not self.base_top_left:
             return [x - x_distance, y - y_distance]
-        
+        # If the base is at the top left, adjust by adding the distances.
         return [x + x_distance, y + y_distance]
+
+    def transformLocation(self, x, y):
+        """
+        Converts absolute map coordinates into relative coordinates based on the base's location.
+        
+        Args:
+        x (int): The absolute x-coordinate on the minimap.
+        y (int): The absolute y-coordinate on the minimap.
+        
+        Returns:
+        list: A list containing the transformed [x, y] coordinates relative to the base location.
+        """
+        # If the base is not at the top left, mirror the coordinates to the opposite side.
+        if not self.base_top_left:
+            return [64 - x, 64 - y]
+        # If the base is at the top left, use the coordinates as they are.
+        return [x, y]
+
         
     def step(self, obs):
-        super(SmartAgent, self).step(obs)
+        """
+        Process an observation from the game, decide on an action, and update the agent's state.
         
-        # Determine the player's base location based on minimap observations.
+        Args:
+        obs: A data structure that contains observations from the game environment.
+        
+        Returns:
+        An action to be executed in the game environment.
+        """
+        # Inherit functionalities from the parent class
+        super(AttackAgent, self).step(obs)
+        
+        # Determine the player's base location to adjust strategies based on map position.
         player_y, player_x = (obs.observation['feature_minimap'][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
         self.base_top_left = 1 if player_y.any() and player_y.mean() <= 31 else 0
         
-        # Gather information about current game state related to unit types.
-        unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
+        # Access unit type data from the screen to detect various structures and units.
+        screen_data = obs.observation['feature_screen']
+        unit_type = screen_data[_UNIT_TYPE]
         depot_y, depot_x = (unit_type == _TERRAN_SUPPLY_DEPOT).nonzero()
         barracks_y, barracks_x = (unit_type == _TERRAN_BARRACKS).nonzero()
-
-        # Count supply depots and barracks to track game progress.
         supply_depot_count = 1 if depot_y.any() else 0
         barracks_count = 1 if barracks_y.any() else 0
+        
+        # Retrieve additional player-related information from the observation.
         supply_limit = obs.observation['player'][4]
         army_supply = obs.observation['player'][5]
-
-        # Calculate the current game state for decision-making.
-        current_state = [supply_depot_count, barracks_count, supply_limit, army_supply]
-        
-        # Compute rewards based on changes in killed unit and building scores.
         killed_unit_score = obs.observation['score_cumulative'][5]
         killed_building_score = obs.observation['score_cumulative'][6]
         
+        # Construct a vector that represents the current state with information gathered.
+        current_state = np.zeros(20)
+        current_state[0] = supply_depot_count
+        current_state[1] = barracks_count
+        current_state[2] = supply_limit
+        current_state[3] = army_supply
+        
+        # Create a grid to mark enemy presence on the minimap for better attack decisions.        
+        hot_squares = np.zeros(16)
+        enemy_y, enemy_x = (screen_data[_PLAYER_RELATIVE] == _PLAYER_HOSTILE).nonzero()
+        for i in range(len(enemy_y)):
+            y = int(math.ceil((enemy_y[i] + 1) / 16))
+            x = int(math.ceil((enemy_x[i] + 1) / 16))
+
+            # Adjust for zero-based index array and ensure index does not go out of bounds
+            index = (y - 1) * 4 + (x - 1)
+            if index >= 0 and index < 16:
+                hot_squares[index] = 1
+
+        if not self.base_top_left:
+            hot_squares = hot_squares[::-1]
+            
+        # Learn from the previous action based on the rewards collected and update the Q-table.
         if self.previous_action is not None:
             reward = 0
-                
             if killed_unit_score > self.previous_killed_unit_score:
                 reward += KILL_UNIT_REWARD
-                    
             if killed_building_score > self.previous_killed_building_score:
                 reward += KILL_BUILDING_REWARD
-            
-            # Update the Q-learning table based on the reward and new state.
+                
             self.qlearn.learn(str(self.previous_state), self.previous_action, reward, str(current_state))
-        
-        # Select an action using the Q-learning policy.
+            print(f"Learned: {self.previous_action} -> Reward: {reward}")
+            
+        # Decide the next action to take based on the current state and Q-learning table.
         rl_action = self.qlearn.choose_action(str(current_state))
         smart_action = smart_actions[rl_action]
-
-        # Update previous scores and states for next learning step.
+        print(f"Action chosen: {smart_action}")
+        
+        # Update internal state tracking variables for next learning step.
         self.previous_killed_unit_score = killed_unit_score
         self.previous_killed_building_score = killed_building_score
         self.previous_state = current_state
         self.previous_action = rl_action
         
-        # Perform the chosen action.
+        # Execute the chosen action.
         return self.perform_action(obs, smart_action)
+            
+    def perform_action(self, obs, smart_action):
+        """
+        Execute the chosen action within the game environment.
+
+        Args:
+        obs: The current game state observations.
+        smart_action: The action selected by the agent to perform.
+
+        Returns:
+        A StarCraft II action function call to be executed in the game.
+        """
+        x = 0
+        y = 0
+        # Parse the coordinates from the action if it's an attack action.
+        if '_' in smart_action:
+            smart_action, x, y = smart_action.split('_')
         
-    def perform_action(self, obs, smart_action):        
+        # Perform a no-operation, essentially skipping the turn.    
         if smart_action == ACTION_DO_NOTHING:
             return actions.FunctionCall(_NO_OP, [])
 
@@ -275,7 +368,7 @@ class SmartAgent(base_agent.BaseAgent):
                 unit_y, unit_x = (unit_type == _TERRAN_COMMANDCENTER).nonzero()
                 
                 if unit_y.any():
-                    target = self.transformLocation(int(unit_x.mean()), 0, int(unit_y.mean()), 20)
+                    target = self.transformDistance(int(unit_x.mean()), 0, int(unit_y.mean()), 20)
                 
                     return actions.FunctionCall(_BUILD_SUPPLY_DEPOT, [_NOT_QUEUED, target])
         
@@ -286,7 +379,7 @@ class SmartAgent(base_agent.BaseAgent):
                 unit_y, unit_x = (unit_type == _TERRAN_COMMANDCENTER).nonzero()
                 
                 if unit_y.any():
-                    target = self.transformLocation(int(unit_x.mean()), 20, int(unit_y.mean()), 0)
+                    target = self.transformDistance(int(unit_x.mean()), 20, int(unit_y.mean()), 0)
             
                     return actions.FunctionCall(_BUILD_BARRACKS, [_NOT_QUEUED, target])
 
@@ -312,12 +405,11 @@ class SmartAgent(base_agent.BaseAgent):
         
         # Command the selected military units to attack a specific point on the minimap.
         elif smart_action == ACTION_ATTACK:
-            if _ATTACK_MINIMAP in obs.observation["available_actions"]:
-                if self.base_top_left:
-                    return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [39, 45]])
-            
-                return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [21, 24]])
-        
+            if (obs.observation['single_select'].any() or obs.observation['multi_select'].any()) and _ATTACK_MINIMAP in obs.observation["available_actions"]:
+                return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [int(x), int(y)]])
+            else:
+                print("No unit selected for attack or action not available")
+
         return actions.FunctionCall(_NO_OP, [])
 
 def main():
@@ -331,7 +423,7 @@ def main():
     flags.FLAGS(sys.argv)
 
     # Instantiate the SimpleAgent.
-    agent = SmartAgent()
+    agent = AttackAgent()
 
     try:
         # Setup the StarCraft II environment for the agent using sc2_env.SC2Env.
@@ -358,7 +450,7 @@ def main():
         print("Game interrupted by user.")
     finally:
         # Save the Q-table to a CSV file when the game ends.
-        agent.qlearn.save(f"Smart_Agent_Q_table_maxep_{max_episodes}.csv")
+        agent.qlearn.save(f"Attack_Agent_Q_table_maxep_{max_episodes}.csv")
         # Print a message indicating the game has ended.
         print("Game has ended.")
 
