@@ -35,8 +35,6 @@ _UNIT_TYPE = features.SCREEN_FEATURES.unit_type.index
 _TERRAN_BARRACKS = 21
 # Unit identifier for Terran Command Center, the primary structure for base operations and worker unit production.
 _TERRAN_COMMANDCENTER = 18
-# Unit identifier for Terran Supply Depot, essential for increasing the unit supply limit to build more units.
-_TERRAN_SUPPLYDEPOT = 19
 # Unit identifier for Terran SCV, the worker unit responsible for resource gathering and building construction.
 _TERRAN_SCV = 45
 
