@@ -10,14 +10,14 @@ import os
 import math
 
 # Constants for actions
-# Identifier for the action to build a Barracks on the game screen, an essential military production building.
-_BUILD_BARRACKS = actions.FUNCTIONS.Build_Barracks_screen.id
-# Identifier for the action to build a Supply Depot on the game screen, a structure that increases the supply limit.
-_BUILD_SUPPLY_DEPOT = actions.FUNCTIONS.Build_SupplyDepot_screen.id
 # Identifier for the action that represents 'no operation', used when no other action is taken in a game step.
 _NO_OP = actions.FUNCTIONS.no_op.id
 # Identifier for the action to select a unit or structure at a specified point on the screen.
 _SELECT_POINT = actions.FUNCTIONS.select_point.id
+# Identifier for the action to build a Supply Depot on the game screen, a structure that increases the supply limit.
+_BUILD_SUPPLY_DEPOT = actions.FUNCTIONS.Build_SupplyDepot_screen.id
+# Identifier for the action to build a Barracks on the game screen, an essential military production building.
+_BUILD_BARRACKS = actions.FUNCTIONS.Build_Barracks_screen.id
 # Identifier for the quick action to train a Marine, a basic infantry unit, from a Barracks.
 _TRAIN_MARINE = actions.FUNCTIONS.Train_Marine_quick.id
 # Identifier for the action to select all combat units in the player's current view.
@@ -36,7 +36,6 @@ _UNIT_TYPE = features.SCREEN_FEATURES.unit_type.index
 _PLAYER_SELF = 1
 # Identifier for enemy units and structures on the minimap, used to detect and interact with hostile elements.
 _PLAYER_HOSTILE = 4
-
 
 # Unit IDs
 # Unit identifier for Terran Barracks, used for training infantry units like Marines.
@@ -414,7 +413,7 @@ class AttackAgent(base_agent.BaseAgent):
 
 def main():
     """
-    Main function to set up and run a StarCraft II environment with the SimpleAgent.
+    Main function to set up and run a StarCraft II environment with the AttackAgent.
     This function configures the game environment, initializes the agent, and manages the game loop.
     """
     max_episodes=1 # Number of episodes to run the game for.
