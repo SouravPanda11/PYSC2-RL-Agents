@@ -10,4 +10,4 @@ The starting code for setting up a Table-base Q learner can be found here - (htt
   - **Restructured Agent codes**: Contains restructured code where the core functionalities and RL logic are separated for easier ML development.
 
 ## Progress
-Implemented a DQN and replaced the Table-base Q-Learner
+- Implemented a DQN and replaced the Table-base Q-Learner
