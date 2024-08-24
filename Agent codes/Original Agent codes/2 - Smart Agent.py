@@ -325,7 +325,7 @@ def main():
     Main function to set up and run a StarCraft II environment with the SimpleAgent.
     This function configures the game environment, initializes the agent, and manages the game loop.
     """
-    max_episodes=1 # Number of episodes to run the game for.
+    max_episodes=10 # Number of episodes to run the game for.
      
     # Parse command line arguments that the script was called with; needed for proper SC2Env configuration.
     flags.FLAGS(sys.argv)

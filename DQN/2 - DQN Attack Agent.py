@@ -9,14 +9,14 @@ from pysc2.env import sc2_env, run_loop
 from pysc2.lib import features, actions
 import sys
 import absl.flags as flags
-import os
 import argparse
+import math
 
-# Functions
-_BUILD_BARRACKS = actions.FUNCTIONS.Build_Barracks_screen.id
-_BUILD_SUPPLY_DEPOT = actions.FUNCTIONS.Build_SupplyDepot_screen.id
+# Constants for actions
 _NO_OP = actions.FUNCTIONS.no_op.id
 _SELECT_POINT = actions.FUNCTIONS.select_point.id
+_BUILD_SUPPLY_DEPOT = actions.FUNCTIONS.Build_SupplyDepot_screen.id
+_BUILD_BARRACKS = actions.FUNCTIONS.Build_Barracks_screen.id
 _TRAIN_MARINE = actions.FUNCTIONS.Train_Marine_quick.id
 _SELECT_ARMY = actions.FUNCTIONS.select_army.id
 _ATTACK_MINIMAP = actions.FUNCTIONS.Attack_minimap.id
@@ -25,18 +25,21 @@ _ATTACK_MINIMAP = actions.FUNCTIONS.Attack_minimap.id
 _PLAYER_RELATIVE = features.SCREEN_FEATURES.player_relative.index
 _UNIT_TYPE = features.SCREEN_FEATURES.unit_type.index
 
+# Constants for identification
+_PLAYER_SELF = 1
+_PLAYER_HOSTILE = 4
+
 # Unit IDs
 _TERRAN_BARRACKS = 21
 _TERRAN_COMMANDCENTER = 18
 _TERRAN_SUPPLY_DEPOT = 19
 _TERRAN_SCV = 45
 
-# Parameters
-_PLAYER_SELF = 1
+# Constants for actions queue
 _NOT_QUEUED = [0]
 _QUEUED = [1]
 
-# Definition of action constants
+# Action definitions
 ACTION_DO_NOTHING = 'donothing' 
 ACTION_SELECT_SCV = 'selectscv' 
 ACTION_BUILD_SUPPLY_DEPOT = 'buildsupplydepot'
@@ -46,7 +49,7 @@ ACTION_BUILD_MARINE = 'buildmarine'
 ACTION_SELECT_ARMY = 'selectarmy'
 ACTION_ATTACK = 'attack'
 
-# List of all defined actions
+# List of all actions for the agent
 smart_actions = [
     ACTION_DO_NOTHING,
     ACTION_SELECT_SCV,
@@ -55,8 +58,13 @@ smart_actions = [
     ACTION_SELECT_BARRACKS,
     ACTION_BUILD_MARINE,
     ACTION_SELECT_ARMY,
-    ACTION_ATTACK,
 ]
+
+# Generate attack actions for a reduced set of critical points on the mini-map.
+for mm_x in range(0, 64):
+    for mm_y in range(0, 64):
+        if (mm_x + 1) % 16 == 0 and (mm_y + 1) % 16 == 0:
+            smart_actions.append(ACTION_ATTACK + '_' + str(mm_x - 8) + '_' + str(mm_y - 8))
 
 # Reward values for specific in-game achievements
 KILL_UNIT_REWARD = 0.2
@@ -88,7 +96,6 @@ class ReplayMemory():
     def __len__(self):
         return len(self.memory)
 
-# Base Agent class for common functionalities
 class Agent(base_agent.BaseAgent):
     def __init__(self):
         super(Agent, self).__init__()
@@ -96,24 +103,27 @@ class Agent(base_agent.BaseAgent):
         self.previous_killed_building_score = 0
         self.previous_action = None
         self.previous_state = None
-        self.base_top_left = None
+        self.base_top_left = None  # Store base location
 
-    def transform_location(self, x, x_distance, y, y_distance):
+    def transform_distance(self, x, x_distance, y, y_distance):
         if not self.base_top_left:
             return [x - x_distance, y - y_distance]
         return [x + x_distance, y + y_distance]
+
+    def transform_location(self, x, y):
+        if not self.base_top_left:
+            return [64 - x, 64 - y]
+        return [x, y]
 
     def compute_reward(self, obs):
         killed_unit_score = obs.observation['score_cumulative'][5]
         killed_building_score = obs.observation['score_cumulative'][6]
         reward = 0
-
         if self.previous_action is not None:
             if killed_unit_score > self.previous_killed_unit_score:
                 reward += KILL_UNIT_REWARD
             if killed_building_score > self.previous_killed_building_score:
                 reward += KILL_BUILDING_REWARD
-
         self.previous_killed_unit_score = killed_unit_score
         self.previous_killed_building_score = killed_building_score
         return reward
@@ -130,14 +140,31 @@ class Agent(base_agent.BaseAgent):
         army_supply = obs.observation['player'][5]
         return [supply_depot_count, barracks_count, supply_limit, army_supply]
 
-    def perform_action(self, obs, smart_action):        
+    def get_hot_squares(self, obs):
+        screen_data = obs.observation['feature_screen']
+        hot_squares = np.zeros(16)  # 4x4 grid representation of the minimap
+        enemy_y, enemy_x = (screen_data[_PLAYER_RELATIVE] == _PLAYER_HOSTILE).nonzero()
+        for i in range(len(enemy_y)):
+            y = int(math.ceil((enemy_y[i] + 1) / 16))
+            x = int(math.ceil((enemy_x[i] + 1) / 16))
+            index = (y - 1) * 4 + (x - 1)
+            if index >= 0 and index < 16:
+                hot_squares[index] = 1
+        if not self.base_top_left:
+            hot_squares = hot_squares[::-1]
+        return hot_squares
+
+    def perform_action(self, obs, smart_action):
+        x, y = 0, 0
+        if '_' in smart_action:
+            smart_action, x, y = smart_action.split('_')
+        
         if smart_action == ACTION_DO_NOTHING:
             return actions.FunctionCall(_NO_OP, [])
 
         elif smart_action == ACTION_SELECT_SCV:
             unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
             unit_y, unit_x = (unit_type == _TERRAN_SCV).nonzero()
-                
             if unit_y.any():
                 i = random.randint(0, len(unit_y) - 1)
                 target = [unit_x[i], unit_y[i]]
@@ -147,49 +174,46 @@ class Agent(base_agent.BaseAgent):
             if _BUILD_SUPPLY_DEPOT in obs.observation['available_actions']:
                 unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
                 unit_y, unit_x = (unit_type == _TERRAN_COMMANDCENTER).nonzero()
-                
                 if unit_y.any():
-                    target = self.transform_location(int(unit_x.mean()), 0, int(unit_y.mean()), 20)
+                    target = self.transform_distance(int(unit_x.mean()), 0, int(unit_y.mean()), 20)
                     return actions.FunctionCall(_BUILD_SUPPLY_DEPOT, [_NOT_QUEUED, target])
         
         elif smart_action == ACTION_BUILD_BARRACKS:
             if _BUILD_BARRACKS in obs.observation['available_actions']:
                 unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
                 unit_y, unit_x = (unit_type == _TERRAN_COMMANDCENTER).nonzero()
-                
                 if unit_y.any():
-                    target = self.transform_location(int(unit_x.mean()), 20, int(unit_y.mean()), 0)
+                    target = self.transform_distance(int(unit_x.mean()), 20, int(unit_y.mean()), 0)
                     return actions.FunctionCall(_BUILD_BARRACKS, [_NOT_QUEUED, target])
 
         elif smart_action == ACTION_SELECT_BARRACKS:
             unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
             unit_y, unit_x = (unit_type == _TERRAN_BARRACKS).nonzero()
-                
             if unit_y.any():
                 target = [int(unit_x.mean()), int(unit_y.mean())]
                 return actions.FunctionCall(_SELECT_POINT, [_NOT_QUEUED, target])
-        
+
         elif smart_action == ACTION_BUILD_MARINE:
             if _TRAIN_MARINE in obs.observation['available_actions']:
                 return actions.FunctionCall(_TRAIN_MARINE, [_QUEUED])
-        
+
         elif smart_action == ACTION_SELECT_ARMY:
             if _SELECT_ARMY in obs.observation['available_actions']:
                 return actions.FunctionCall(_SELECT_ARMY, [_NOT_QUEUED])
-        
+
         elif smart_action == ACTION_ATTACK:
-            if _ATTACK_MINIMAP in obs.observation["available_actions"]:
-                if self.base_top_left:
-                    return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [39, 45]])
-                return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [21, 24]])
-        
+            if (obs.observation['single_select'].any() or obs.observation['multi_select'].any()) and _ATTACK_MINIMAP in obs.observation["available_actions"]:
+                return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, [int(x), int(y)]])
+            else:
+                print("No unit selected for attack or action not available")
+
         return actions.FunctionCall(_NO_OP, [])
 
-# SmartAgent class for DQN implementation
-class SmartAgent(Agent):
+# Attack agent class for DQN implementation
+class AttackAgent(Agent):
     def __init__(self, load_model=False, model_path=None):
-        super(SmartAgent, self).__init__()
-        
+        super(AttackAgent, self).__init__()
+
         # Hyperparameters
         self.gamma = 0.9
         self.lr = 0.001
@@ -198,22 +222,22 @@ class SmartAgent(Agent):
         self.epsilon_decay = 0.995
         self.batch_size = 32
         self.sync_rate = 10
-        
+
         # DQN
-        input_dim = 4  # State: [supply_depot_count, barracks_count, supply_limit, army_supply]
+        input_dim = 20  # State: [supply_depot_count, barracks_count, supply_limit, army_supply] + 16 hot squares
         hidden_dim = 128
         output_dim = len(smart_actions)
-        
+
         self.policy_dqn = DQN(input_dim, hidden_dim, output_dim)
         self.target_dqn = DQN(input_dim, hidden_dim, output_dim)
 
         if load_model and model_path:
             self.load(model_path)
-        
+
         # Optimizer
         self.optimizer = torch.optim.Adam(self.policy_dqn.parameters(), lr=self.lr)
-        self.loss_fn = nn.MSELoss()
-        
+        self.loss_fn = torch.nn.MSELoss()
+
         # Replay Memory
         self.memory = ReplayMemory(maxlen=1000)
         self.sync_counter = 0
@@ -228,6 +252,9 @@ class SmartAgent(Agent):
             return torch.argmax(q_values).item()
 
     def replay_experience(self):
+        if len(self.memory) < self.batch_size:
+            return  # Do not train until we have enough samples in memory
+
         # Sample mini-batch from replay memory
         mini_batch = self.memory.sample(self.batch_size)
 
@@ -271,13 +298,13 @@ class SmartAgent(Agent):
         self.policy_dqn.load_state_dict(torch.load(filename))
         self.policy_dqn.eval()  # Set the network to evaluation mode
         print(f"Model successfully loaded from {filename}")
-
+    
 # Main function for both training and testing
 def main(mode="train"):
     # Parse absl flags separately
     flags.FLAGS(sys.argv[:1])  # Only pass the program name to absl.flags
-    max_episodes = 100 if mode == "train" else 10
-    agent = SmartAgent(load_model=(mode == "test"), model_path="dqn_smart_agent_100.pth" if mode == "test" else None)
+    max_episodes = 100 if mode == "train" else 5
+    agent = AttackAgent(load_model=(mode == "test"), model_path="dqn_attack_agent_100.pth" if mode == "test" else None)
 
     try:
         with sc2_env.SC2Env(
@@ -295,7 +322,7 @@ def main(mode="train"):
         print(f"Game interrupted in {mode} mode.")
     finally:
         if mode == "train":
-            agent.save(f"dqn_smart_agent_{max_episodes}.pth")
+            agent.save(f"dqn_attack_agent_{max_episodes}.pth")
         print(f"{mode.capitalize()} mode has ended.")
 
 if __name__ == "__main__":
