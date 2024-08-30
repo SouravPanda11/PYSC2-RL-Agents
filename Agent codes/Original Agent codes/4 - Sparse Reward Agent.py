@@ -73,32 +73,25 @@ class QLearningTable:
 
     def choose_action(self, observation):
         self.check_state_exist(observation)
-        
         if np.random.uniform() < self.epsilon:
             # choose best action
             state_action = self.q_table.loc[observation, :]
-            
             # some actions have the same value
             state_action = state_action.reindex(np.random.permutation(state_action.index))
-            
             action = state_action.idxmax()
         else:
             # choose random action
             action = np.random.choice(self.actions)
-            
         return action
 
     def learn(self, s, a, r, s_):
         self.check_state_exist(s_)
         self.check_state_exist(s)
-        
         q_predict = self.q_table.loc[s, a]
-        
         if s_ != 'terminal':
             q_target = r + self.gamma * self.q_table.loc[s_, :].max()
         else:
             q_target = r  # next state is terminal
-            
         # update
         self.q_table.loc[s, a] += self.lr * (q_target - q_predict)
 
@@ -118,15 +111,11 @@ class QLearningTable:
 class SparseAgent(base_agent.BaseAgent):
     def __init__(self):
         super(SparseAgent, self).__init__()
-        
         self.qlearn = QLearningTable(actions=list(range(len(smart_actions))))
-        
         self.previous_action = None
         self.previous_state = None
-        
         self.cc_y = None
         self.cc_x = None
-        
         self.move_number = 0
         
         data_file_path = os.path.join(data_directory, DATA_FILE + '.gz')
@@ -136,41 +125,31 @@ class SparseAgent(base_agent.BaseAgent):
     def transformDistance(self, x, x_distance, y, y_distance):
         if not self.base_top_left:
             return [x - x_distance, y - y_distance]
-        
         return [x + x_distance, y + y_distance]
     
     def transformLocation(self, x, y):
         if not self.base_top_left:
             return [64 - x, 64 - y]
-        
         return [x, y]
     
     def splitAction(self, action_id):
         smart_action = smart_actions[action_id]
-            
         x = 0
         y = 0
         if '_' in smart_action:
             smart_action, x, y = smart_action.split('_')
-
         return (smart_action, x, y)
         
     def step(self, obs):
         super(SparseAgent, self).step(obs)
-        
+
         if obs.last():
             reward = obs.reward
-        
             self.qlearn.learn(str(self.previous_state), self.previous_action, reward, 'terminal')
-            
-            # self.qlearn.q_table.to_pickle(data_directory + '.gz', 'gzip')
             self.qlearn.q_table.to_pickle(os.path.join(data_directory, DATA_FILE + '.gz'), compression='gzip')
-            
             self.previous_action = None
             self.previous_state = None
-            
             self.move_number = 0
-            
             return actions.FunctionCall(_NO_OP, [])
         
         unit_type = obs.observation['feature_screen'][_UNIT_TYPE]
@@ -178,15 +157,12 @@ class SparseAgent(base_agent.BaseAgent):
         if obs.first():
             player_y, player_x = (obs.observation['feature_minimap'][_PLAYER_RELATIVE] == _PLAYER_SELF).nonzero()
             self.base_top_left = 1 if player_y.any() and player_y.mean() <= 31 else 0
-        
             self.cc_y, self.cc_x = (unit_type == _TERRAN_COMMANDCENTER).nonzero()
 
         cc_y, cc_x = (unit_type == _TERRAN_COMMANDCENTER).nonzero()
         cc_count = 1 if cc_y.any() else 0
-        
         depot_y, depot_x = (unit_type == _TERRAN_SUPPLY_DEPOT).nonzero()
         supply_depot_count = int(round(len(depot_y) / 69))
-
         barracks_y, barracks_x = (unit_type == _TERRAN_BARRACKS).nonzero()
         barracks_count = int(round(len(barracks_y) / 137))
             
@@ -225,18 +201,15 @@ class SparseAgent(base_agent.BaseAgent):
             
             if smart_action == ACTION_BUILD_BARRACKS or smart_action == ACTION_BUILD_SUPPLY_DEPOT:
                 unit_y, unit_x = (unit_type == _TERRAN_SCV).nonzero()
-                    
                 if unit_y.any():
                     i = random.randint(0, len(unit_y) - 1)
                     target = [unit_x[i], unit_y[i]]
-                    
                     return actions.FunctionCall(_SELECT_POINT, [_NOT_QUEUED, target])
                 
             elif smart_action == ACTION_BUILD_MARINE:
                 if barracks_y.any():
                     i = random.randint(0, len(barracks_y) - 1)
                     target = [barracks_x[i], barracks_y[i]]
-            
                     return actions.FunctionCall(_SELECT_POINT, [_SELECT_ALL, target])
                 
             elif smart_action == ACTION_ATTACK:
@@ -247,7 +220,6 @@ class SparseAgent(base_agent.BaseAgent):
             self.move_number += 1
             
             smart_action, x, y = self.splitAction(self.previous_action)
-                
             if smart_action == ACTION_BUILD_SUPPLY_DEPOT:
                 if supply_depot_count < 2 and _BUILD_SUPPLY_DEPOT in obs.observation['available_actions']:
                     if self.cc_y.any():
@@ -255,7 +227,6 @@ class SparseAgent(base_agent.BaseAgent):
                             target = self.transformDistance(round(self.cc_x.mean()), -35, round(self.cc_y.mean()), 0)
                         elif supply_depot_count == 1:
                             target = self.transformDistance(round(self.cc_x.mean()), -25, round(self.cc_y.mean()), -25)
-    
                         return actions.FunctionCall(_BUILD_SUPPLY_DEPOT, [_NOT_QUEUED, target])
             
             elif smart_action == ACTION_BUILD_BARRACKS:
@@ -265,7 +236,6 @@ class SparseAgent(base_agent.BaseAgent):
                             target = self.transformDistance(round(self.cc_x.mean()), 15, round(self.cc_y.mean()), -9)
                         elif  barracks_count == 1:
                             target = self.transformDistance(round(self.cc_x.mean()), 15, round(self.cc_y.mean()), 12)
-    
                         return actions.FunctionCall(_BUILD_BARRACKS, [_NOT_QUEUED, target])
     
             elif smart_action == ACTION_BUILD_MARINE:
@@ -274,42 +244,32 @@ class SparseAgent(base_agent.BaseAgent):
         
             elif smart_action == ACTION_ATTACK:
                 do_it = True
-                
                 if len(obs.observation['single_select']) > 0 and obs.observation['single_select'][0][0] == _TERRAN_SCV:
                     do_it = False
-                
                 if len(obs.observation['multi_select']) > 0 and obs.observation['multi_select'][0][0] == _TERRAN_SCV:
                     do_it = False
-                
                 if do_it and _ATTACK_MINIMAP in obs.observation["available_actions"]:
                     x_offset = random.randint(-1, 1)
                     y_offset = random.randint(-1, 1)
-                    
                     return actions.FunctionCall(_ATTACK_MINIMAP, [_NOT_QUEUED, self.transformLocation(int(x) + (x_offset * 8), int(y) + (y_offset * 8))])
                 
         elif self.move_number == 2:
             self.move_number = 0
             
             smart_action, x, y = self.splitAction(self.previous_action)
-                
             if smart_action == ACTION_BUILD_BARRACKS or smart_action == ACTION_BUILD_SUPPLY_DEPOT:
                 if _HARVEST_GATHER in obs.observation['available_actions']:
                     unit_y, unit_x = (unit_type == _NEUTRAL_MINERAL_FIELD).nonzero()
-                    
                     if unit_y.any():
                         i = random.randint(0, len(unit_y) - 1)
-                        
                         m_x = unit_x[i]
                         m_y = unit_y[i]
-                        
                         target = [int(m_x), int(m_y)]
-                        
                         return actions.FunctionCall(_HARVEST_GATHER, [_QUEUED, target])
-        
         return actions.FunctionCall(_NO_OP, [])
-
+    
 def main():
-    max_episodes = 100
+    max_episodes = 10000
     flags.FLAGS(sys.argv)
 
     try:
